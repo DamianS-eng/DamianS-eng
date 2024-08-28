@@ -73,9 +73,16 @@ Back in 2016, Valve has promised an [effort to support every single controller f
 		1. Overview (VERY basic, don't go into menus, show what it does, how it works, and how to disable)
  		1. Basic Changes (recommended layouts, templates, and quick access)
 		1. Deeper Dive (explore into the configurator)
-			1. Rename Bindings (for non-Steam-Input-API configs)
-   			1. Button Types
-			1. Action Sets & Layers
+      - Rename Bindings (for non-Steam-Input-API configs)
+   		- Types of outputs
+        - Keyboard
+        - Mouse
+        - Xbox Controller
+        - System
+        - Camera
+   		- Button Types
+      - Action Settings
+      - Action Sets & Layers
 		1. Desktop Layout
  		1. Guide Button Layout
 
