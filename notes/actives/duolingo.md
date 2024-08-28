@@ -14,19 +14,19 @@ When recovering from a streak freeze, the next practice lesson from a notificati
 
 ## Types of Exercises
 
- - First-time
-  - Match new word to the image.
-  - Basic grammar lesson example.
-  - What does this word mean?
- - Repetition
-  - Repeat phrases or sentences for emphasis.
-  - Listen and regurgitate, by typing or voice input.[^2]
-  - Match the word to its translation.
- - Hard Lessons
-  - Fully translate, from text or audio, either with keyboard or voice[^2].
- - Explore
-  - Stories
-  - Radio
+- First-time
+	- Match new word to the image.
+	- Basic grammar lesson example.
+	- What does this word mean?
+- Repetition
+	- Repeat phrases or sentences for emphasis.
+	- Listen and regurgitate, by typing or voice input.[^2]
+	- Match the word to its translation.
+- Hard Lessons
+	- Fully translate, from text or audio, either with keyboard or voice[^2].
+- Explore
+	- Stories
+	- Radio
 
 ## Incentives
 
