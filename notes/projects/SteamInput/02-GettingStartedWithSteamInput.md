@@ -1,5 +1,9 @@
 # Getting Started With Steam Input
 
+## About
+
+In under 15 minutes, go over the first steps to introduce anyone to Steam Input.
+
 ## Chapters
 
 1. Grab a controller
@@ -10,10 +14,17 @@ Is it one of these three types?
 	Don't rely on Steam for unsupported controllers.
 
 1. Launch Steam
+   - Steam needs to be running to change the controller behavior.
+   - It can run in the background, even if the game you want to play is not on Steam.
 
 1. Choose a game
 	1. Steam Game
 	1. Non-Steam Game
+	- Small warning about modern games with launchers from other publishers.
+    	-- Destiny 2
+    	-- VALORANT
+    	-- Fortnite
+	- Prefer to contribute to emulators supporting your controller instead of relying on Steam Input.
 
 1. Set up the controller
 	- Compatibility
@@ -31,5 +42,9 @@ Is it one of these three types?
 -	Steam footage.
 -	Pick games
 	1. Steam
-	1. Non-Steam but controlelr support
+	1. Non-Steam but controller support
 	1. Non-Steam Mouse Only (Plants vs Zombies)
+
+## When Project Complete
+
+Condense into ~60 second YouTube short, adjust aspect ratio for 9:16.
