@@ -1,0 +1,15 @@
+# About the detriments of Steam Input
+
+I'd rather not include these in the project at all, but may as well get these thoughts down.
+
+## Yes, Steam Input has limitations.
+
+Especially as the Action Layers are put to their tests
+
+## Yes, Steam Input has broken and incomplete features.
+
+Even with the incorperation of gyro modes, it is impossible to convince Steam Input to output only the yaw and roll axes to a 2D plane, for the purpose of using a controller sideways. We cannot use a single Joy-Con with gyro rotated 90 degrees; this is already done when a pair are connected and combined, but pointless if the game is mouse-only or requires less than 4 buttons and one stick.
+
+Similarly, it is currently impossible to rotate the analog axes of sticks, such that left-right movement on one stick outputs to up-down movement on another. An example of application is a SCHMUP with a screen turned 90 degrees, but perhaps games can interpret this outside Steam Input...
+
+Spin Rhythm XD does an excellent job incorperating Steam Input Actions into their official configuration while providing more powerful gyroscope options than the official Steam Input gyro configuration can provide.
