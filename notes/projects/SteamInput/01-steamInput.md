@@ -112,7 +112,7 @@ On PC, there are still contentions about input that are underrepresented and spl
 
 ### Written Documentation
 
-- (Steamworks Documentation for Players)[https://partner.steamworks.com/doc/features/steam_controller/getting_started_for_players]
+- [Steamworks Documentation for Players](https://partner.steamgames.com/doc/features/steam_controller/getting_started_for_players)
 - Steamworks Development Conference
 	1. [Steam Controller](https://youtu.be/7l4SiAiKqqk)
   1. [Steam Input Programming](https://youtu.be/UfN5WK7OzU8])
