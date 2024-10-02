@@ -1,5 +1,5 @@
 # Steam Input
-
+Tags: [[Valve Steam]]
 ## The goal
 Provide a complete playlist that explores and explains the fundamentals of Steam Input in a objective, concrete method.
 

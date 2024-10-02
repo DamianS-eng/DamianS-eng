@@ -1,5 +1,5 @@
 # Getting Started With Steam Input
-
+Tags: [[Valve Steam]]
 ## About
 
 In under 15 minutes, go over the first steps to introduce anyone to Steam Input.

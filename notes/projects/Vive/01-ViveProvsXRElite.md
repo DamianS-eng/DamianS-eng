@@ -1,5 +1,5 @@
 # HTC Vive Pro vs XR Elite Headsets
-
+Tags: [[Virtual Reality]]
 ## The goal
 
 Provide knowledge and a comparison between the two VR headsets from 2016 and 2023, the HTC Vive Pro and the HTC Vive XR Elite headsets. They're several generations apart, but still serve the same purpose of utilizing SteamVR with some differences in terms of extra capabilities and trade-offs.
