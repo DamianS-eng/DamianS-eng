@@ -32,7 +32,7 @@ When recovering from a streak freeze, the next practice lesson from a notificati
 
 Practice before noon or after 6pm for a potion that increases experience gain on the next lesson.
 
-Daily quests acrue monthly quest points for badges.
+Daily quests accrue monthly quest points for badges.
 
 Experience totals account for weekly leaderboards with 29 other randomly selected Duolingo users in the same league and language plan.
 

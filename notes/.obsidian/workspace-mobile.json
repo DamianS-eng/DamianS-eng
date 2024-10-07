@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/splatoon/Object Placement Matters.md",
+                "file": "actives/duolingo.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "projects/splatoon/Object Placement Matters.md",
+            "file": "actives/duolingo.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "projects/splatoon/Object Placement Matters.md",
+            "file": "actives/duolingo.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "projects/splatoon/Object Placement Matters.md"
+            "file": "actives/duolingo.md"
           }
         }
       }
@@ -133,7 +133,8 @@
   },
   "active": "f03f4c163cf99f0f",
   "lastOpenFiles": [
-    "inbox/About the HTC Vive Wireless on Linux.md",
+    "projects/VRonLinux/About the HTC Vive Wireless on Linux.md",
+    "projects/splatoon/Object Placement Matters.md",
     "projects/VRonLinux/01-VRonLinux.md",
     "tags/Valve Steam.md",
     "tags/Splatoon.md"
