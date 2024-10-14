@@ -1,0 +1,160 @@
+{
+  "main": {
+    "id": "4ff96761dd05ab18",
+    "type": "split",
+    "children": [
+      {
+        "id": "09a136c8da47c570",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9f742e955f2985ee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "archive/Using the old hacked Nintendo 3DS.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "08be88d51c5c9721",
+    "type": "split",
+    "children": [
+      {
+        "id": "a90fb7d0723209e2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9d2a9e3fcda33cc7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d39053457708a3bc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3ff2051de16b977a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9c637ad3231257c0",
+    "type": "split",
+    "children": [
+      {
+        "id": "a96585454d2f13e4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "297318371969220e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "archive/Using the old hacked Nintendo 3DS.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "444824f77cc561fe",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "archive/Using the old hacked Nintendo 3DS.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "632b24f5a56c787d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "38c35c5da12f920c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "archive/Using the old hacked Nintendo 3DS.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "9f742e955f2985ee",
+  "lastOpenFiles": [
+    "tags/Jailbreak.md",
+    "archive/Using the old hacked Nintendo 3DS.md",
+    "tags/Hacking.md",
+    "tags/Nintendo 3DS.md",
+    "projects/splatoon/Object Placement Matters.md",
+    "actives/01-manageGit.md",
+    "actives/duolingo.md",
+    "archive/01-addOldStuffHere.md"
+  ]
+}
