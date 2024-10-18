@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "09a136c8da47c570",
+        "id": "cee508b6582ef6c6",
         "type": "tabs",
         "children": [
           {
-            "id": "9f742e955f2985ee",
+            "id": "97316a276753d7cf",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "projects/splatoon/Object Placement Matters.md",
-                "mode": "preview",
-                "source": false
-              }
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -39,7 +37,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -54,7 +54,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,7 +64,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -85,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "projects/splatoon/Object Placement Matters.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +96,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
             }
           },
           {
@@ -102,10 +107,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "projects/splatoon/Object Placement Matters.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
             }
           },
           {
@@ -116,7 +122,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -124,9 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "projects/splatoon/Object Placement Matters.md"
-              }
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Outline"
             }
           }
         ]
@@ -146,13 +154,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9f742e955f2985ee",
+  "active": "97316a276753d7cf",
   "lastOpenFiles": [
+    "projects/SteamInput/01-steamInput.md",
+    "projects/SteamInput/03-CreatingATemplate.md",
+    "04-.md",
+    "projects/SteamInput/02-GettingStartedWithSteamInput.md",
+    "projects/splatoon/Object Placement Matters.md",
     "archive/Using the old hacked Nintendo 3DS.md",
     "tags/Jailbreak.md",
     "tags/Hacking.md",
     "tags/Nintendo 3DS.md",
-    "projects/splatoon/Object Placement Matters.md",
     "actives/01-manageGit.md",
     "actives/duolingo.md",
     "archive/01-addOldStuffHere.md"

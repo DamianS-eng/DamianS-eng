@@ -16,9 +16,9 @@ While there are plenty of YouTube videos and playlists that already exist which 
 
 This is meant as an updated video playlist sink that anchors and links as much documentation about Steam Input as possible.
 
-Back in 2016, Valve has promised an [effort to support every single controller for Steam Input](https://youtu.be/7l4SiAiKqqk), starting with an update to the old Big Picture that adds non-Steam-Controller controllers, starting with the Sony Playstation DualShock4 (PS4) controller, without any other driver or program on the PC.
+Back in 2016, Valve has promised an [effort to support every single controller for Steam Input](https://youtu.be/7l4SiAiKqqk), with an update to the old Big Picture that adds non-Steam-Controller controllers, starting with the Sony Playstation DualShock4 (PS4) controller, without any other driver or program on the PC.
 
-On PC, there are still contentions about input that are underrepresented and split throughout the community, and Steam Input was designed in mind with the constraints and assumptions made about games to translate as much of new technology while maintaining or improving the games' performance.
+On PC, there are still opinions about input that are underrepresented and assumptions that split the community, and Steam Input was designed in mind with the constraints and assumptions made about input in games. The goal is to translate as much input made possible by new technology to these games while maintaining or improving the games' performance.
 
 ## The Plan
 
