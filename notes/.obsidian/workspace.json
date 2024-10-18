@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "archive/Using the old hacked Nintendo 3DS.md",
+                "file": "projects/splatoon/Object Placement Matters.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "archive/Using the old hacked Nintendo 3DS.md",
+                "file": "projects/splatoon/Object Placement Matters.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "archive/Using the old hacked Nintendo 3DS.md",
+                "file": "projects/splatoon/Object Placement Matters.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "archive/Using the old hacked Nintendo 3DS.md"
+                "file": "projects/splatoon/Object Placement Matters.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "9f742e955f2985ee",
   "lastOpenFiles": [
-    "tags/Jailbreak.md",
     "archive/Using the old hacked Nintendo 3DS.md",
+    "tags/Jailbreak.md",
     "tags/Hacking.md",
     "tags/Nintendo 3DS.md",
     "projects/splatoon/Object Placement Matters.md",
