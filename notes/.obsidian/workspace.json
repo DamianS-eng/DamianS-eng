@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "actives/Splatoon Record Keeping.md",
+                "file": "archive/Using the old hacked Nintendo 3DS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Splatoon Record Keeping"
+              "title": "Using the old hacked Nintendo 3DS"
             }
           }
         ]
@@ -160,8 +160,8 @@
   },
   "active": "3bda4c7478342baf",
   "lastOpenFiles": [
-    "().md",
     "actives/Splatoon Record Keeping.md",
+    "().md",
     "projects/SteamInput/01-steamInput.md",
     "projects/SteamInput/03-CreatingATemplate.md",
     "04-.md",
