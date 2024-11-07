@@ -6,6 +6,10 @@ Tags: [[tests]][[website]][[server]]
 
 [GTMetrix](https://gtmetrix.com)
 
+## DNS
+
+[DNS Checker](https://dnschecker.org)
+
 # Security
 
 [Security Headers](https://securityheaders.com)
