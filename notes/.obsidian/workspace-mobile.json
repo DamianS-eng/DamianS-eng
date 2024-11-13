@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "actives/duolingo.md",
+                "file": "projects/Personal Website.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "duolingo"
+              "title": "Personal Website"
             }
           }
         ]
@@ -147,8 +147,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f3ce7975764c7a58",
+  "active": "f03f4c163cf99f0f",
   "lastOpenFiles": [
+    "actives/duolingo.md",
     "library/Pkmn-Teams-Display.md",
     "library/PC-Prevent-Deleting-Files.md",
     "library/PC-Manual-Disk-Partition.md",

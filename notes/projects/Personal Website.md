@@ -34,4 +34,5 @@ Link to MOCL
 
 # Links
 
-- Linkedin
+- use the LinkedIn Icon linking to LinkedIn
+- use a robotic gif icon linking to MOCL
