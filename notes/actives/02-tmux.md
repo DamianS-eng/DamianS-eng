@@ -57,3 +57,9 @@ tmux ls
 
 `C-b`
 - `[ / ]` 
+
+# References
+
+- [Commands from NetworkChuck from YouTube](https://www.youtube.com/watch?v=nTqu6w2wc68)
+- [Blog on Customization](https://hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/)
+- [Decorate your terminal](https://hamvocke.com/blog/lets-create-a-terminal-color-scheme/)
