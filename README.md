@@ -14,6 +14,8 @@
   <img src="https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true" />
 </picture>
 
+[![roadmap.sh](https://roadmap.sh/card/tall/6792a79acd5bbd692d677a35?variant=dark)](https://roadmap.sh)
+
 <!---
 DamianS-eng/DamianS-eng is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 I'll have a folder of my ongoing circuit designs.
