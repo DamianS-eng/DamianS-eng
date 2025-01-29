@@ -106,7 +106,7 @@ Now move on to installing wire-pod.
 
 # Install Wire-pod
 
-- wire-pod supports most Linux distributions, macOS, Windows 10/11, and Android. Follow one of the following guides, then continue on to  ["Authenticate the bot with wire-pod"](#Authenticate-the-bot-with-wire-pod).
+- wire-pod supports most Linux distributions, macOS, Windows 10/11, and Android. Follow one of the following guides, then continue on to  ["Authenticate the bot with wire-pod"](#Authenticate-the-bot).
 
 ## Guide 1: Debian/Ubuntu
 
@@ -122,14 +122,14 @@ Now move on to installing wire-pod.
        - **arm64 is required if you want to use the Raspberry Pi 5. The armhf version segfaults.**
 4. Open a terminal and run the following commands (replace \<arch\> with the architecture of your device, #.#.# with the current version):
 
-```
+```bash
 cd Downloads
 sudo apt update
 sudo apt install -y ./wirepod_<arch>-#.#.#.deb
 ```
 
 5. The terminal should show a message saying "WirePod configuration page: <ip:port>". Open that link in a browser and follow the instructions.
-6. Continue on to ["Authenticate the bot with wire-pod"](#Authenticate-the-bot-with-wire-pod).
+6. Continue on to ["Authenticate the bot with wire-pod"](#Authenticate-the-bot).
 
 ## Guide 2: Other Linux (or macOS if you want to build it yourself)
 
@@ -273,13 +273,15 @@ Now you can proceed with the docker portion.
 docker compose up -d -f https://raw.githubusercontent.com/kercre123/wire-pod/main/compose.yaml
 ```
 4. With a device on the same network as wire-pod, open a browser and head to the configuration page. http://your_ip:8080/. In that page, follow the instructions. Wire-pod should then be set up!
-5. Continue on to ["Authenticate the bot with wire-pod"](https://github.com/kercre123/wire-pod/wiki/Installation#authenticate-the-bot-with-wire-pod), near the bottom of this page.
+5. Continue on to ["Authenticate the bot with wire-pod"](#Authenticate-the-bot), near the bottom of this page.
 
 # Authenticate the bot
 
 1. Head to the WirePod interface and click "Bot Setup". Follow the instructions in the "Authenticate" section.
     - One of two things may happen. It might give you a link to go to. If it does, go to that and follow the directions on that site.
-         - Note that the vector-wirepod-setup page is a page which does not just serve one purpose. If the bot is in recovery mode, it puts firmware on the bot. If not, it will attempt to authenticate the bot.
+         - Note that the vector-wirepod-setup page is a page which does not just serve one purpose.
+           - If the bot is in recovery mode, it puts firmware on the bot.
+           - If not, it will attempt to authenticate the bot.
     - Some builds of WirePod will give you the option to use WirePod's inbuilt BLE rather than an external web page. If this is the case, the interface will not show another web page to go to. It will just have instructions to follow and a "Scan" button. If this is the case, just follow the directions.
 
 2. You should end up at a screen with an "ACTIVATE" or "AUTHENTICATE" button. Click on it.
