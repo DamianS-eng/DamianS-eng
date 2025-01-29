@@ -1,5 +1,8 @@
 # Wire-pod
 
+## Configuration Page
+
+TODO: On successful setup, but a link to the website here.
 
 # What is it?
 
@@ -84,7 +87,7 @@ This can be done by setting him on the charger and holding his button for ~15 se
 
 ### anki.com/v or ddl.io/v screen on Vector
 
-Open Chrome (some other Chromium-based browsers work too) on a device with Bluetooth support and go to (https://wpsetup.keriganc.com/).[^4]
+Open Chrome (some other Chromium-based browsers work too) on a device with Bluetooth support and go to [wpsetup](https://wpsetup.keriganc.com/).[^4]
 
 Follow the directions. The bot should start downloading an update.
 
@@ -106,7 +109,9 @@ Now move on to installing wire-pod.
 
 # Install Wire-pod
 
-- wire-pod supports most Linux distributions, macOS, Windows 10/11, and Android. Follow one of the following guides, then continue on to  ["Authenticate the bot with wire-pod"](#Authenticate-the-bot).
+wire-pod supports most Linux distributions, macOS, Windows 10/11, and Android. 
+
+Follow one of the following guides, then continue on to  ["Authenticate the bot with wire-pod"](#Authenticate-the-bot).
 
 ## Guide 1: Debian/Ubuntu
 
@@ -129,6 +134,7 @@ sudo apt install -y ./wirepod_<arch>-#.#.#.deb
 ```
 
 5. The terminal should show a message saying "WirePod configuration page: <ip:port>". Open that link in a browser and follow the instructions.
+  - The link should look like [this link in this markdown document](#Configuration-Page), assuming the port number is the same. 
 6. Continue on to ["Authenticate the bot with wire-pod"](#Authenticate-the-bot).
 
 ## Guide 2: Other Linux (or macOS if you want to build it yourself)
@@ -188,7 +194,7 @@ sudo ~/wire-pod/setup.sh daemon-enable
 sudo systemctl start wire-pod
 ```
 
-8. Continue on to ["Authenticate the bot with wire-pod"](#Authenticate-the-bot-with-wire-pod)., near the bottom of this page.
+8. Continue on to ["Authenticate the bot with wire-pod"](#Authenticate-the-bot)., near the bottom of this page.
 
 ## Guide 3: Windows 10/11
 
@@ -203,7 +209,7 @@ sudo systemctl start wire-pod
 5. Windows SmartScreen may come up. Click `More Info` then select `Run Anyway`.
 6. Follow the instructions.
 7. Open wire-pod if it isn't open already. On the message pop-up, click "Open browser" and finish setting wire-pod up.
-8. Continue on to ["Authenticate the bot with wire-pod"](#Authenticate-the-bot-with-wire-pod)..
+8. Continue on to ["Authenticate the bot with wire-pod"](#Authenticate-the-bot).
 
 ## Guide 4: macOS 11 and above
 
@@ -216,7 +222,7 @@ sudo systemctl start wire-pod
 7. You will get a popup saying the developer is unidentified. Go to Settings/System Preferences -> Security then click Run Anyway.
 8. Follow the prompts from WirePod.
 9. Click "Open browser" and finish setting wire-pod up.
-10. Continue on to ["Authenticate the bot with wire-pod"](#Authenticate-the-bot-with-wire-pod).
+10. Continue on to ["Authenticate the bot with wire-pod"](#Authenticate-the-bot).
 
 ## Guide 5: Android 4.4 and above
 
@@ -235,7 +241,7 @@ sudo systemctl start wire-pod
 10. Go to the URL under "WirePod Control" in the device browser and finish setting WirePod up.
   -  The "with specific grammer?" checkbox removes some words from the speech model. This speeds up speech recognition, but means the robot will only understand the words he needs to understand. So you can't directly ask "what's the meaning of life?" or something like that. Only words in commands (like "how are you?") would be recognized correctly. It is recommended you don't check this, but you can check it if you want better performance. It is especially recommended if you are running WirePod on very old (Android KitKat-era) devices.
   -  **If you are setting WirePod up with an unlocked robot,** you must chosoe a port above 1024. The default port (443) will not work because Android doesn't allow binding to privileged ports (ports below 1024).
-11. Continue on to ["Authenticate the bot with wire-pod"](#Authenticate-the-bot-with-wire-pod).
+11. Continue on to ["Authenticate the bot with wire-pod"](#Authenticate-the-bot).
 
 ## Guide 6: Docker compose
 This requires the host to posess either the hostname of escapepod.local or have an mDNS configuration for it
