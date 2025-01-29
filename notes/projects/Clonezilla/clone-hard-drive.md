@@ -49,14 +49,14 @@ Clone small disk to larger disk
 
 ### One image to multiple disks
 
+Restore an image to multiple disks, e.g. massive production of live USB flash drives.
+
 1. [Start Clonezilla](#Start-Clonezilla)
 1. Choose "device-image" option
 1. Choose "local_dev" option to assign sde1 as the image home
 1. Select sde1 as image repository, then choose "1-2-mdisks" option
 1. Select image name and destination disk
 1. Clonezilla is restoring disk image on disk sde to sda, sdc, and sdd.
-
-Restore an image to multiple disks, e.g. massive production of live USB flash drives.
 
 ### Create Recovery Clonezilla
 
