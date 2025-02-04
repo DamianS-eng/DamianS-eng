@@ -89,7 +89,10 @@ This can be done by setting him on the charger and holding his button for ~15 se
 
 Open Chrome (some other Chromium-based browsers work too) on a device with Bluetooth support and go to [wpsetup](https://wpsetup.keriganc.com/).[^4]
 
-Follow the directions. The bot should start downloading an update.
+Follow the directions. 
+- The browser will try to connect to Vector via Bluetooth.
+- If Vector does not have a Wi-Fi connection, one can be provided to him from the browser.
+- The bot should start downloading an update. This usually takes a couple minutes; check the browser page and bot's screen.
 
 ### Clear Bot User Data
 
@@ -134,7 +137,8 @@ sudo apt install -y ./wirepod_<arch>-#.#.#.deb
 ```
 
 5. The terminal should show a message saying "WirePod configuration page: <ip:port>". Open that link in a browser and follow the instructions.
-  - The link should look like [this link in this markdown document](#Configuration-Page), assuming the port number is the same. 
+  - The link should look like [this link in this markdown document](#Configuration-Page), assuming the port number is the same.
+  - Change the port by changing `/etc/wire-pod/config.ini`
 6. Continue on to ["Authenticate the bot with wire-pod"](#Authenticate-the-bot).
 
 ## Guide 2: Other Linux (or macOS if you want to build it yourself)
