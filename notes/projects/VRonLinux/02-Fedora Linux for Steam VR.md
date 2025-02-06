@@ -1,3 +1,5 @@
+# Let's install Fedora Linux for Steam VR
+
 Tags: [[Virtual Reality]] [[Steam]] [[Linux]] [[Fedora]]
 
 This is a written breakdown of how to get an installation of Linux Fedora for a PC to run Steam VR.
@@ -90,8 +92,8 @@ Specific games may need a specific Proton version, or additional launch paramete
 Steam VR can run natively, but other games that don't have a native Linux build will need compatibility checks.
 # References
 
-[Install NVidia Driver on Fedora Linux](https://www.youtube.com/watch?v=k5uxX2U3tYE)
-[Install Steam VR on Fedora Linux](https://www.youtube.com/watch?v=Fb8bXP8xIBk)
-[ProtonDB](https://protondb.com) 
-[Install NVidia Drivers on Fedora](https://rpmfusion.org/Howto/NVIDIA) 
-[Nvidia as Primary GPU for laptops](https://docs.fedoraproject.org/en-US/quick-docs/set-nvidia-as-primary-gpu-on-optimus-based-laptops/)
+- [Install NVidia Driver on Fedora Linux](https://www.youtube.com/watch?v=k5uxX2U3tYE)
+- [Install Steam VR on Fedora Linux](https://www.youtube.com/watch?v=Fb8bXP8xIBk)
+- [ProtonDB](https://protondb.com) 
+- [Install NVidia Drivers on Fedora](https://rpmfusion.org/Howto/NVIDIA) 
+- [Nvidia as Primary GPU for laptops](https://docs.fedoraproject.org/en-US/quick-docs/set-nvidia-as-primary-gpu-on-optimus-based-laptops/)
