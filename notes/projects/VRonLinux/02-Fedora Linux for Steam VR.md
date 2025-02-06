@@ -4,14 +4,9 @@ Tags: [[Virtual Reality]] [[Steam]] [[Linux]] [[Fedora]]
 
 This is a written breakdown of how to get an installation of Linux Fedora for a PC to run Steam VR.
 
-This setup uses Steam VR headsets like the HTC Vive (Pro) or the Valve Index. 
+This setup uses Steam VR headsets like the HTC Vive (Pro) or the Valve Index.[^2][^3]
 
-Ocululs/Meta headsets require ALVR setups, which are not covered in this guide.
-
-Recent HTC headsets with inside-out tracking like the XR Elite and the Focus have their own implementation compatible with Windows Steam VR, but has not been proven to work on Steam VR Linux.
-
-Use the KDE Plasma Desktop environment, with an X11 session.
-- Some YouTubers claim that X11 is deprecated and that Wayland display system sessions are consistently updated, but this is not proven to work with Nvidia drivers in the past couple of months. Start with X11, then check if Wayland or Nvidia drivers are more compatible in more recent versions.
+Use the KDE Plasma Desktop environment, with an X11 session.[^1]
 
 # Install Proprietary Nvidia driver
 
@@ -90,6 +85,7 @@ Settings -> Compatibility -> Enable Steam Play for supported titles & all other 
 Specific games may need a specific Proton version, or additional launch parameters.
 
 Steam VR can run natively, but other games that don't have a native Linux build will need compatibility checks.
+
 # References
 
 - [Install NVidia Driver on Fedora Linux](https://www.youtube.com/watch?v=k5uxX2U3tYE)
@@ -97,3 +93,9 @@ Steam VR can run natively, but other games that don't have a native Linux build 
 - [ProtonDB](https://protondb.com) 
 - [Install NVidia Drivers on Fedora](https://rpmfusion.org/Howto/NVIDIA) 
 - [Nvidia as Primary GPU for laptops](https://docs.fedoraproject.org/en-US/quick-docs/set-nvidia-as-primary-gpu-on-optimus-based-laptops/)
+
+[^1]: Some YouTubers claim that X11 is deprecated and that Wayland display system sessions are consistently updated, but this is not proven to work with Nvidia drivers in the past couple of months. Start with X11, then check if Wayland or Nvidia drivers are more compatible in more recent versions.
+
+[^2]: Ocululs/Meta headsets require ALVR setups, which are not covered in this guide.
+
+[^3]: Recent HTC headsets with inside-out tracking like the XR Elite and the Focus have their own implementation compatible with Windows Steam VR, but has not been proven to work on Steam VR Linux.
