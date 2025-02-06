@@ -27,8 +27,9 @@ Refer to your specific motherboard manufacturer instructions.
 ## Installation
 
 ### Determine the GPU model.
-`neofetch` is the easiest command.
-Otherwise, `/sbin/lspci | grep -e VGA` or `/sbin/lspci | grep -e 3D` 
+`neofetch` is the easiest command. Otherwise, 
+- `/sbin/lspci | grep -e VGA` or
+- `/sbin/lspci | grep -e 3D` 
 
 ## Properly Sign
 ### Secure boot & akmods
