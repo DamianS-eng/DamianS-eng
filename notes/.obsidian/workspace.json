@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "library/apache.md",
+                "file": "library/Capacitance.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "apache"
+              "title": "Capacitance"
             }
           }
         ],
@@ -190,6 +190,8 @@
   },
   "active": "0aef238b11cac99d",
   "lastOpenFiles": [
+    "library/Bodybuilding-Simplified.md",
+    "library/apache.md",
     "Optimize Images for Web.md",
     "Secure Shell (SSH).md",
     "Monero.md",
@@ -215,8 +217,6 @@
     "archive/Using the old hacked Nintendo 3DS.md",
     "actives/Splatoon Record Keeping.md",
     "().md",
-    "projects/SteamInput/01-steamInput.md",
-    "projects/SteamInput/03-CreatingATemplate.md",
-    "04-.md"
+    "projects/SteamInput/01-steamInput.md"
   ]
 }
