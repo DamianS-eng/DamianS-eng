@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "Secure Shell (SSH)"
             }
+          },
+          {
+            "id": "706164623c025599",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Monero.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Monero"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -55,7 +69,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -173,10 +188,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a996ec144b9af605",
+  "active": "706164623c025599",
   "lastOpenFiles": [
-    "actives/Piano.md",
+    "Monero.md",
     "Secure Shell (SSH).md",
+    "actives/Piano.md",
     "FAA Flying Club.md",
     "actives/Fitbit.md",
     "Tracking Your Health.md",
@@ -201,7 +217,6 @@
     "projects/SteamInput/01-steamInput.md",
     "projects/SteamInput/03-CreatingATemplate.md",
     "04-.md",
-    "projects/SteamInput/02-GettingStartedWithSteamInput.md",
-    "projects/splatoon/Object Placement Matters.md"
+    "projects/SteamInput/02-GettingStartedWithSteamInput.md"
   ]
 }
