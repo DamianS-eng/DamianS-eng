@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "library/Capacitance.md",
+                "file": "library/House Buying in New Jersey.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Capacitance"
+              "title": "House Buying in New Jersey"
             }
           }
         ],
@@ -190,6 +190,7 @@
   },
   "active": "0aef238b11cac99d",
   "lastOpenFiles": [
+    "library/Capacitance.md",
     "library/Bodybuilding-Simplified.md",
     "library/apache.md",
     "Optimize Images for Web.md",
@@ -201,7 +202,6 @@
     "Tracking Your Health.md",
     "archive/Skills.md",
     "archive/Modular Laptops.md",
-    "library/Capacitance.md",
     "actives/Manage Social Contacts.md",
     "archive/Decentralized Social Media.md",
     "library/HTML for People.md",
