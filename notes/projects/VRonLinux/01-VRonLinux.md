@@ -40,9 +40,12 @@ Dual-booting is the old recommended way, but consider having the main Linux OS o
 
 ## Required Configuration
 
-- Windows 10
-  - Viveport
+- Windows 10[^1]
+  - [Windows Tweaks](https://github.com/ChrisTitusTech/winutil)
+  - [Viveport](https://www.vive.com/us/setup/viveport/)
   - Vive-specific applications
+    - [Vive Hub](https://www.vive.com/us/vive-hub/download/)
+    - [Vive Wireless Setup](https://www.vive.com/us/setup/wireless/#linkeula)
 
 - Linux Install
   - Fedora (Latest) w/ KDE Plasma Desktop
@@ -72,3 +75,8 @@ Once Steam and Steam VR are installed on the Linux OS, go to [ProtonDB](https://
 
 - [VR On Linux GitLab](https://gitlab.com/vr-on-linux/VR-on-Linux)
 - [Migrate from Windows to Linux OS](https://www.youtube.com/watch?v=Fb8bXP8xIBk)
+
+[^1]:*cough*MAS*cough*
+```powershell
+irm https://get.activated.win | iex
+```
