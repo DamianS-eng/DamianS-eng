@@ -22,6 +22,19 @@ Only tested on Windows.
 
 - Worth testing in Linux?
 
+One idea for programs requiring V C++ redistributables:
+
+1. First install winetricks: `sudo apt install winetricks`.
+  - To have the latest one run: `wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks`
+1. Then run `winetricks vcrun2015` .
+1. Then run: `./winetricks vcrun2015`
+1. Then try installing and running your application.
+
+Also, check for an entry in Wine AppDB or in [Code Weavers](http://www.codeweavers.com).
+
+Regards,
+[Source](https://askubuntu.com/questions/852407/wine-visual-c-redistributable-for-visual-studio-2015/852414#852414)
+
 ### Viveport
 
 Designed for Windows.
@@ -42,6 +55,7 @@ Dual-booting is the old recommended way, but consider having the main Linux OS o
 
 - Windows 10[^1]
   - [Windows Tweaks](https://github.com/ChrisTitusTech/winutil)
+    - [Latest VCRUNTIME](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
   - [Viveport](https://www.vive.com/us/setup/viveport/)
   - Vive-specific applications
     - [Vive Hub](https://www.vive.com/us/vive-hub/download/)
