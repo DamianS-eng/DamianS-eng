@@ -14,6 +14,10 @@ Move all these off of Aorus.
 
 ### Graphics Driver
 
+#### NVIDIA
+
+[[02-Fedora Linux for Steam VR.md]]
+
 ### Steam
 
 ### Vive Wireless Tool
@@ -62,7 +66,9 @@ Dual-booting is the old recommended way, but consider having the main Linux OS o
     - [Vive Wireless Setup](https://www.vive.com/us/setup/wireless/#linkeula)
 
 - Linux Install
-  - Fedora (Latest) w/ KDE Plasma Desktop
+  - [Fedora (Latest) w/ KDE Plasma Desktop](https://fedoraproject.org/spins/kde)
+  - One Video mentions using GNOME instead. (https://www.youtube.com/watch?v=6X-XMg4XhPc)
+  - [NoburaOS](https://noburaproject.org) is a SteamOS-like derivative hobby distribution for NVIDIA GPUs. AMD alternative is [ChimeraOS](https://chimeraos.org/)
 
 ## SteamVR Games
 
