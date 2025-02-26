@@ -47,6 +47,14 @@ cat /etc/os-release | grep PRETTY_NAME=
 - `/sbin/lspci | grep -e 3D` 
 
 ## Properly Sign
+
+### Boot in EFI
+
+```bash
+sudo dmesg | grep "EFI v"
+```
+If this returns nothing, booted in legacy BIOS. Don't worry about secure boot & akmods, skip to [Add RPM Repos](#add-rpm-repos).
+
 ### Secure boot & akmods
 
 Newer motherboards have SafeBoot or SecureBoot features. Because of this, the driver needs to be signed with a key made before installation and confirmed during the BIOS restart.[^5]
@@ -55,6 +63,7 @@ Newer motherboards have SafeBoot or SecureBoot features. Because of this, the dr
 	- `sudo dnf install kmodtool akmods mokutil openssl`
 2. Generate a key to sign the driver.
 	- `sudo kmodgenca -a`
+ 	- Key is stored in `/etc/pki/akmods/*/*_key.*`, both a private and public key in different directories.
 3. Enroll the key in mokutil.
 	-  `sudo mokutil --import /etc/pki/akmods/certs/public_key.der`
 4. mokutil needs a password. Remember the password created here to give to mokutil on restart to import the key.
