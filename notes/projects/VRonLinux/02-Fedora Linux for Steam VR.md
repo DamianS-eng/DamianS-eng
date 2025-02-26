@@ -34,7 +34,7 @@ cat /etc/os-release | grep PRETTY_NAME=
 
 ### Install Free & Nonfree repositories
 
-1. Enable access to free repository.
+1. Enable access to free repository. [^4]
  - Click on the link at the rpmfusion website to download the RPm Fusion free that matches this machine's Fedora version.
  - Install using `kpackagekit` or `Discover`.
 1. Enable access to nonfree repository.
@@ -48,7 +48,8 @@ cat /etc/os-release | grep PRETTY_NAME=
 
 ## Properly Sign
 ### Secure boot & akmods
-Newer motherboards have SafeBoot or SecureBoot features. Because of this, the driver needs to be signed with a key made before installation and confirmed during the BIOS restart.
+
+Newer motherboards have SafeBoot or SecureBoot features. Because of this, the driver needs to be signed with a key made before installation and confirmed during the BIOS restart.[^5]
 
 1. Get akmods tool.
 	- `sudo dnf install kmodtool akmods mokutil openssl`
@@ -70,7 +71,7 @@ Newer motherboards have SafeBoot or SecureBoot features. Because of this, the dr
 
 `sudo dnf install akmod-nvidia`
 
-`sudo dnf install xord-x11-drv-nvidia-cuda`
+`sudo dnf install xorg-x11-drv-nvidia-cuda`
 
 `systemctl reboot`
 
@@ -111,6 +112,7 @@ Steam VR can run natively, but other games that don't have a native Linux build 
 - [ProtonDB](https://protondb.com) 
 - [Install NVidia Drivers on Fedora](https://rpmfusion.org/Howto/NVIDIA)
 - [^4]:[NVIDIA Fedora Configuration](https://rpmfusion.org/Configuration)
+- [^5]:[Secure Boot Key](https://rpmfusion.org/Howto/Secure%20Boot)
 - [Nvidia as Primary GPU for laptops](https://docs.fedoraproject.org/en-US/quick-docs/set-nvidia-as-primary-gpu-on-optimus-based-laptops/)
 
 [^1]: Some YouTubers claim that X11 is deprecated and that Wayland display system sessions are consistently updated, but this is not proven to work with Nvidia drivers in the past couple of months. Start with X11, then check if Wayland or Nvidia drivers are more compatible in more recent versions.
