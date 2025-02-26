@@ -21,7 +21,25 @@ A restart may need be required.
 Disable all non-Linux boot devices in the BIOS.
 
 Refer to your specific motherboard manufacturer instructions.
+
 ## Installation
+
+## Configuration
+
+### Find Fedora version
+
+```bash
+cat /etc/os-release | grep PRETTY_NAME=
+```
+
+### Install Free & Nonfree repositories
+
+1. Enable access to free repository.
+ - Click on the link at the rpmfusion website to download the RPm Fusion free that matches this machine's Fedora version.
+ - Install using `kpackagekit` or `Discover`.
+1. Enable access to nonfree repository.
+ - Click on the link of the RPM Fusion nonfree repository that matches this machine's Fedrora version.
+ - Similarly, use `kpackagekit` or `Discover`
 
 ### Determine the GPU model.
 `neofetch` is the easiest command. Otherwise, 
@@ -91,7 +109,8 @@ Steam VR can run natively, but other games that don't have a native Linux build 
 - [Install NVidia Driver on Fedora Linux](https://www.youtube.com/watch?v=k5uxX2U3tYE)
 - [Install Steam VR on Fedora Linux](https://www.youtube.com/watch?v=Fb8bXP8xIBk)
 - [ProtonDB](https://protondb.com) 
-- [Install NVidia Drivers on Fedora](https://rpmfusion.org/Howto/NVIDIA) 
+- [Install NVidia Drivers on Fedora](https://rpmfusion.org/Howto/NVIDIA)
+- [^4]:[NVIDIA Fedora Configuration](https://rpmfusion.org/Configuration)
 - [Nvidia as Primary GPU for laptops](https://docs.fedoraproject.org/en-US/quick-docs/set-nvidia-as-primary-gpu-on-optimus-based-laptops/)
 
 [^1]: Some YouTubers claim that X11 is deprecated and that Wayland display system sessions are consistently updated, but this is not proven to work with Nvidia drivers in the past couple of months. Start with X11, then check if Wayland or Nvidia drivers are more compatible in more recent versions.
