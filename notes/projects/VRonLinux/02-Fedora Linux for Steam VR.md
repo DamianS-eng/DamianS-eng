@@ -92,7 +92,21 @@ Check that a version string prints from this, and that the NVIDIA control panel 
 
 `sudo dnf install plasma-workspace-x11`
 
+## Use KDE Plasma (X11)
+
 At the login-screen, change the Desktop Session to "Plasma (X11)".
+
+## Default X11
+
+The login screen should remember the last workspace used, but just in case,
+
+- System Settings
+- Colors & Themes
+- Login Screen (SDDM)
+- Behavior (in the top right)
+- Check enable "Automatically log in \[x\] as user: {user} with session Plasma (X11)
+
+Auto-login does not support unlocking the KDE Wallet automatically, if this is a concern...
 
 # Install Steam
 
