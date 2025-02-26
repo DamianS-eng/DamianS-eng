@@ -110,11 +110,10 @@ Auto-login does not support unlocking the KDE Wallet automatically, if this is a
 
 # Install Steam
 
-Check the Steam website for the latest compatible package file or installer.
-
-Do NOT use the snap package (if even possible on Fedora). 
-
-Check the equivalent "Discover" store for more recent or automated changes.
+- Check the [Steam website](https://steampowered.com) for the latest compatible package file or installer.
+- `sudo dnf install steam` works well.
+- Do NOT use the snap package (if even possible on Fedora).
+- Check the equivalent "Discover" store for more recent or automated changes.
 
 Once Steam VR is installed and headset is connected, launch it and go through Room Setup.
 
@@ -127,6 +126,16 @@ Settings -> Compatibility -> Enable Steam Play for supported titles & all other 
 Specific games may need a specific Proton version, or additional launch parameters.
 
 Steam VR can run natively, but other games that don't have a native Linux build will need compatibility checks.
+
+## ProtonDB
+
+Steam won't know about VR compatibility, so use [ProtonDB](https://www.protondb.com)
+
+1. [Access Steam settings.](https://steamcommunity.com/sharedfiles/filedetails/?id=390278662)
+1. Steam Help menu
+1. System Information
+1. Right-click and select Copy all text to clipboard
+1. Omit everything starting with 'LD Scout Report' or if provided it will be stripped out automatically upon saving to ProtonDB.
 
 # References
 
