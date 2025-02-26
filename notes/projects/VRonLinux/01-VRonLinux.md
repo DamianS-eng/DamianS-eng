@@ -78,6 +78,27 @@ Once Steam and Steam VR are installed on the Linux OS, go to [ProtonDB](https://
 
 - This will help document recommended configurations for self and others.
 
+#### Steam Play (Proton)
+
+Enable Compatibility for all titles.
+
+1. Steam Desktop
+1. Top Left
+1. _Steam_
+1. _Settings_
+1. _Compatibility_
+1. _Enable Steam Play for all other titles_
+1. _Run other titles with_ the latest version of Proton_
+
+For specific titles, refer to [ProtonDB](https://www.protondb.com) for the recommended Proton version and any necessary tweaks.
+
+1. Right Click Game
+1. _Properties_
+1. _Compatibility_
+1. _Force the use of a specific Steam Play compatibility tool_
+1. Choose a specific version according to ProtonDB.
+1. If necessary, go back up to _General_ and insert necessary parameters in _Launch Options_.
+
 ### Titles not on Steamdb
 
 - Catch & Release
