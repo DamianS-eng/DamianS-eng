@@ -78,6 +78,21 @@ Once Steam and Steam VR are installed on the Linux OS, go to [ProtonDB](https://
 
 - This will help document recommended configurations for self and others.
 
+
+#### First Time Steam VR
+
+As of v.2.9.6
+
+Get headset connected and powered on.
+
+First, Steam VR will request superuser privileges to complete setup.
+
+Then, Steam VR Status will launch, with a prompt to set OpenXR runtime as default. Accept.
+
+Room Setup should pop up. If it doesn't, go to the dropdown menu on the corner of the status window. Follow the setup.
+
+If NOT using Meta, keep OpenXR's Meta Plugin Compatibility set to off, not automatic.
+
 #### Steam Play (Proton)
 
 Enable Compatibility for all titles.
