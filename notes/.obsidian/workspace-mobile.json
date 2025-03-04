@@ -13,12 +13,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "library/SSLhowto.md",
-                "mode": "source",
-                "source": false
+                "file": "projects/VRonLinux/01-VRonLinux.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
-              "title": "SSLhowto"
+              "title": "01-VRonLinux"
             }
           }
         ]
@@ -36,7 +46,8 @@
         "state": {
           "type": "file-explorer",
           "state": {
-            "sortOrder": "alphabetical"
+            "sortOrder": "alphabetical",
+            "autoReveal": false
           },
           "icon": "lucide-folder-closed",
           "title": "Files"
@@ -48,7 +59,7 @@
         "state": {
           "type": "search",
           "state": {
-            "query": "",
+            "query": "Steam vr",
             "matchingCase": false,
             "explainSearch": false,
             "collapseAll": false,
@@ -83,7 +94,7 @@
         }
       }
     ],
-    "currentTab": 0
+    "currentTab": 1
   },
   "right": {
     "id": "0e5e591d1b4c882d",
@@ -95,7 +106,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "actives/duolingo.md",
+            "file": "Tracking Your Health.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -149,18 +160,35 @@
   },
   "active": "f03f4c163cf99f0f",
   "lastOpenFiles": [
+    "projects/Clonezilla/clone-hard-drive.md",
+    "Tracking Your Health.md",
+    "projects/Vector/wire-pod.md",
+    "projects/Vector",
+    "projects/Clonezilla",
+    "projects/splatoon/Object Placement Matters.md",
+    "library/web1-web2-web3.md",
+    "library/Test-Websites.md",
+    "library/Hyperion.md",
+    "library/Hybrid Work Model Update.md",
+    "library/Create READMEs.md",
+    "library/apache.md",
+    "inbox/trackpad.md",
+    "archive/Using the old hacked Nintendo 3DS.md",
+    "archive/Skills.md",
+    "archive/Modular Laptops.md",
+    "actives/Manage Social Contacts.md",
+    "actives/Piano.md",
+    "actives/Home Battery.md",
+    "actives/duolingo.md",
+    "library/ImageMagick.md",
+    "library/SSLhowto.md",
     "library/Gyro-Wiki.md",
     "projects/Personal Website.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
-    "actives/duolingo.md",
     "library/Pkmn-Teams-Display.md",
     "library/PC-Prevent-Deleting-Files.md",
     "library/PC-Manual-Disk-Partition.md",
-    "projects/VRonLinux/About the HTC Vive Wireless on Linux.md",
-    "projects/splatoon/Object Placement Matters.md",
-    "projects/VRonLinux/01-VRonLinux.md",
-    "tags/Valve Steam.md",
-    "tags/Splatoon.md"
+    "projects/VRonLinux/About the HTC Vive Wireless on Linux.md"
   ]
 }
