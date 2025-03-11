@@ -67,6 +67,7 @@ Dual-booting is the old recommended way, but consider having the main Linux OS o
 
 - Linux Install
   - [Fedora (Latest) w/ KDE Plasma Desktop](https://fedoraproject.org/spins/kde)
+  - Officially, Steam recommends using the native distribution package, running over Plasma Wayland or KDE X11 on an Arch-based distribution. 
   - One Video mentions using GNOME instead. (https://www.youtube.com/watch?v=6X-XMg4XhPc)
   - [NoburaOS](https://noburaproject.org) is a SteamOS-like derivative hobby distribution for NVIDIA GPUs. AMD alternative is [ChimeraOS](https://chimeraos.org/)
 
@@ -130,6 +131,7 @@ For specific titles, refer to [ProtonDB](https://www.protondb.com) for the recom
 ## References
 
 - [VR On Linux GitLab](https://gitlab.com/vr-on-linux/VR-on-Linux)
+- [Valve FAQ on Steam VR Linux](https://help.steampowered.com/en/faqs/view/18A4-1E10-8A94-3DDA)
 - [Migrate from Windows to Linux OS](https://www.youtube.com/watch?v=Fb8bXP8xIBk)
 
 [^1]:*cough*MAS*cough*
