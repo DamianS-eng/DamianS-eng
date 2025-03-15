@@ -1,5 +1,6 @@
 # Preinstall
 
+## Arch/Fedora
 sudo yum install gcc git-core make cmake \
 alsa-lib-devel pulseaudio-libs-devel nas-devel pipewire-devel \
 libX11-devel libXext-devel libXrandr-devel libXcursor-devel libXfixes-devel \
@@ -9,6 +10,14 @@ mesa-libEGL-devel vulkan-devel wayland-devel wayland-protocols-devel \
 libdrm-devel mesa-libgbm-devel libusb-devel libdecor-devel \
 pipewire-jack-audio-connection-kit-devel \
 kernel-devel libcxx-devel
+
+## Debian
+
+## Pacman
+
+```bash
+pacman -S base-devel mingw-w64-ucrt-x86_64-gcc mingw-w64-ucrt-x86_64-ninja mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-sdl3
+```
 
 # Start
 
@@ -29,6 +38,11 @@ make -j$(nproc)
 cmake .. -DSDL_EXAMPLES=On
 ```
 
+## Msys2
+
+```bash
+cmake .. -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++
+```
 # Install
 
 ```bash

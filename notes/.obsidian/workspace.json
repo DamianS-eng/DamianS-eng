@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "library/House Buying in New Jersey.md",
+                "file": "library/All About Building SDL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "House Buying in New Jersey"
+              "title": "All About Building SDL"
             }
           }
         ],
@@ -107,7 +107,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9c637ad3231257c0",
@@ -190,6 +191,7 @@
   },
   "active": "0aef238b11cac99d",
   "lastOpenFiles": [
+    "library/House Buying in New Jersey.md",
     "library/Capacitance.md",
     "library/Bodybuilding-Simplified.md",
     "library/apache.md",
@@ -216,7 +218,6 @@
     "projects/VRonLinux/About the HTC Vive Wireless on Linux.md",
     "archive/Using the old hacked Nintendo 3DS.md",
     "actives/Splatoon Record Keeping.md",
-    "().md",
-    "projects/SteamInput/01-steamInput.md"
+    "().md"
   ]
 }
