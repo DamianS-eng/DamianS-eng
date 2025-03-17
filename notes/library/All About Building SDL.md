@@ -24,6 +24,13 @@ pacman -S base-devel mingw-w64-ucrt-x86_64-gcc mingw-w64-ucrt-x86_64-ninja mingw
 ### Msys2
 
 Use the UCRT64 syntax.
+
+# Clone Repo
+
+```bash
+git clone https://github.com/libsdl-org/SDL.git
+```
+
 # Start
 
 - make a build directory
@@ -62,6 +69,7 @@ A better way is to install to make it easier to find the path for resources to l
 
 # References
 
-[Mike Shah Course](https://www.youtube.com/watch?v=1S5qlQ7U34M)
-[Glusoft](https://glusoft.com/sdl3-tutorials/install-sdl3-linux/)
-[Migration Checklist](https://wiki.libsdl.org/SDL3/README/migration)
+- [SDL Install Markdown](https://github.com/libsdl-org/SDL/blob/main/INSTALL.md)
+- [Mike Shah Course](https://www.youtube.com/watch?v=1S5qlQ7U34M)
+- [Glusoft](https://glusoft.com/sdl3-tutorials/install-sdl3-linux/)
+- [Migration Checklist](https://wiki.libsdl.org/SDL3/README/migration)
