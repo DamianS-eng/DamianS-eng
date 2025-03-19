@@ -6,7 +6,7 @@ tags: [[web]] [[web2]] [[web3]]
 
 ## Read-Only
 
-Documents connected together by hyperlinks
+Static documents connected together by hyperlinks
 
 - Consumer's Haven
 - Content available from a few amount of creators
@@ -50,7 +50,13 @@ Smart contracts, for third-world countries to participate in money lending or bo
 
 ## Web3 Foundation
 
+### Web3 Summit
+
+[Summit Website](https://web3summit.com/)
+
 ### Polkadot
+
+[Polkadot](https://polkadot.com/what-is-web3)
 
 # References
 
