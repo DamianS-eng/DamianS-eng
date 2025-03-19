@@ -73,3 +73,4 @@ A better way is to install to make it easier to find the path for resources to l
 - [Mike Shah Course](https://www.youtube.com/watch?v=1S5qlQ7U34M)
 - [Glusoft](https://glusoft.com/sdl3-tutorials/install-sdl3-linux/)
 - [Migration Checklist](https://wiki.libsdl.org/SDL3/README/migration)
+- [Lazy Foo Tutorials](https://lazyfoo.net/tutorials/SDL3/)
