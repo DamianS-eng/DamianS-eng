@@ -56,5 +56,6 @@ mogrify -flatten -format <jpg> *.<in>
 
 # References
 
-[Codepen Markdown](https://codepen.io.peterbenoit/pen/MWNzoWV)
-[My Codepen Form](https://codepen.io/DamianS-eng/pen/KKOOKPr)
+- [Codepen Markdown](https://codepen.io.peterbenoit/pen/MWNzoWV)
+- [Develop](https://imagemagick.org/script/develop.php)
+-  [My Codepen Form](https://codepen.io/DamianS-eng/pen/KKOOKPr)
