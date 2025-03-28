@@ -63,7 +63,7 @@ if (navigator.xr !== 'undefined') {
   sessionMode = 'immersive-vr'
   if (navigator.xr.isSessionSupported(sessionMode)) {
   console.log("Available VR session");
-};
+  };
 };
 ```
 

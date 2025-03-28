@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "library/All About Building SDL.md",
+                "file": "library/Virtual-Reality-Internet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "All About Building SDL"
+              "title": "Virtual-Reality-Internet"
             }
           }
         ],
@@ -82,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "meta",
+                "query": "gamepad",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -103,12 +103,12 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9c637ad3231257c0",
@@ -124,6 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "library/All About Building SDL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +134,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for All About Building SDL"
             }
           },
           {
@@ -191,6 +192,8 @@
   },
   "active": "0aef238b11cac99d",
   "lastOpenFiles": [
+    "library/All About Building SDL.md",
+    "Untitled.canvas",
     "library/House Buying in New Jersey.md",
     "library/Capacitance.md",
     "library/Bodybuilding-Simplified.md",
@@ -212,12 +215,9 @@
     "Economic and Market Outlook - 2025.md",
     "projects/Personal Website.md",
     "Untitled 1.canvas",
-    "Untitled.canvas",
     "projects/VRonLinux/02-Fedora Linux for Steam VR.md",
     "projects/VRonLinux/01-VRonLinux.md",
     "projects/VRonLinux/About the HTC Vive Wireless on Linux.md",
-    "archive/Using the old hacked Nintendo 3DS.md",
-    "actives/Splatoon Record Keeping.md",
-    "().md"
+    "archive/Using the old hacked Nintendo 3DS.md"
   ]
 }
