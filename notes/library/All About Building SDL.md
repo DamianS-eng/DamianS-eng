@@ -84,7 +84,7 @@ FUNCTION UPDATE()
 	*/
 END
 
-FUNCTIOn DRAW()
+FUNCTION DRAW()
 	/* once per frame
 	...
 	*/
@@ -112,6 +112,27 @@ int main(int argc, char **argv) {
 }
 ```
 
+
+## Deterministic & Independent of Hardware
+```
+/* Find:
+ - Change in time between loop execution (Delta Time)
+Use:
+ - fixed frequency of updates (Tick Rate) (Update Per Second)
+*/
+while (running)
+{
+    deltaTime = timeNow - timeLastUpdate
+    timeLastUpdate += deltaTime
+    timeAccumulated += deltaTime
+    while (timeAccumulated > tickRate) {
+        update(step)
+        timeAccumulated -= tickRate
+    }
+    draw();
+    handle_new_events();
+}
+```
 
 While this black box loop works for engines and simple programs, SDL has access to callback functions dedicated to their own responsibilities to initializing, processing and handling everything in the program.
 
