@@ -59,7 +59,7 @@
         "state": {
           "type": "search",
           "state": {
-            "query": "Motion",
+            "query": "SDL",
             "matchingCase": false,
             "explainSearch": false,
             "collapseAll": false,
@@ -160,6 +160,7 @@
   },
   "active": "20b6265aca241a14",
   "lastOpenFiles": [
+    "library/All About Building SDL.md",
     "library/Motion-Design-Web.md",
     "projects/Clonezilla/clone-hard-drive.md",
     "Tracking Your Health.md",
@@ -188,7 +189,6 @@
     "Untitled.canvas",
     "Untitled 1.canvas",
     "library/Pkmn-Teams-Display.md",
-    "library/PC-Prevent-Deleting-Files.md",
-    "library/PC-Manual-Disk-Partition.md"
+    "library/PC-Prevent-Deleting-Files.md"
   ]
 }
