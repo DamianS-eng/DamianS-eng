@@ -15,6 +15,15 @@ kernel-devel libcxx-devel
 
 
 ## Debian
+```bash
+sudo apt-get install build-essential git make \
+pkg-config cmake ninja-build gnome-desktop-testing libasound2-dev libpulse-dev \
+libaudio-dev libjack-dev libsndio-dev libx11-dev libxext-dev \
+libxrandr-dev libxcursor-dev libxfixes-dev libxi-dev libxss-dev libxtst-dev \
+libxkbcommon-dev libdrm-dev libgbm-dev libgl1-mesa-dev libgles2-mesa-dev \
+libegl1-mesa-dev libdbus-1-dev libibus-1.0-dev libudev-dev \
+libpipewire-0.3-dev libwayland-dev libdecor-0-dev liburing-dev
+```
 
 ## Pacman
 
@@ -33,9 +42,9 @@ git clone https://github.com/libsdl-org/SDL.git
 
 # Start
 
-- make a build directory
-- use cmake to build
-- use make
+1. make a build directory
+1. use cmake to build
+1. use make
 
 ```bash
 cd ~/dev/SDL
@@ -59,10 +68,12 @@ cmake .. -DSDL_EXAMPLES=On
 
 - g++
 - Link library directory
+  - -I `/SDL/include`
 - Link shared resource
+  - -L `libSDL3.so`
 
 ```bash
-g++ {{input}}.c{{pp}} -o {{output}} -L {{/SDL/build}} -lSDL3
+g++ {{input}}.c{{pp}} -o {{output}} -I/path/to/SDL/include -L{{/SDL/lib}} -lSDL3
 ```
 
 A better way is to install to make it easier to find the path for resources to link to the compiled program.
@@ -142,12 +153,20 @@ While this black box loop works for engines and simple programs, SDL has access 
 #define SDL_MAIN_USE_CALLBACKS 1 /* use the callbacks instead of main() */
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
+
+typedef struct
+{
+    SDL_Window *window;
+    SDL_Renderer *renderer;
+    SnakeContext snake_ctx;
+    Uint64 last_step;
+} AppState;
 ```
 
 ### SDL_AppInit
 
 ```C
-SDL_AppInit(void **appstate, int argc, char *argv[]) {
+SDL_AppResult SDL_AppInit(void **appstate, int argc, char *argv[]) {
 	if (!SDL_INIT(SDL_INIT_VIDEO)) { return SDL_APP_FAILURE; }
     AppState *as = (AppState *)SDL_calloc(1, sizeof(AppState));
     if (!as) {
@@ -213,6 +232,7 @@ void SDL_AppQuit(void *appstate, SDL_AppResult result)
         SDL_DestroyWindow(as->window);
         SDL_free(as);
     }
+}
 ```
 ## Frames Per Second (FPS)
 # References
