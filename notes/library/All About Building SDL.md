@@ -58,6 +58,11 @@ make -j$(nproc)
 ```bash
 cmake .. -DSDL_EXAMPLES=On
 ```
+## Static Libary
+```bash
+cmake .. -DSDL_SHARED=ON -DSDL_STATIC=ON
+```
+
 # Install
 
 ```bash
