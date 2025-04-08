@@ -137,6 +137,10 @@ Steam won't know about VR compatibility, so use [ProtonDB](https://www.protondb.
 1. Right-click and select Copy all text to clipboard
 1. Omit everything starting with 'LD Scout Report' or if provided it will be stripped out automatically upon saving to ProtonDB.
 
+# Troubleshooting
+
+[If Controller or runtime issues, move game install to default, or add GAMECOMPAT path in launch options.] (https://github.com/ValveSoftware/SteamVR-for-Linux/issues/775)
+
 # References
 
 - [Install NVidia Driver on Fedora Linux](https://www.youtube.com/watch?v=k5uxX2U3tYE)
