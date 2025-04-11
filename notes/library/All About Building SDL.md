@@ -163,7 +163,6 @@ typedef struct
 {
     SDL_Window *window;
     SDL_Renderer *renderer;
-    SnakeContext snake_ctx;
     Uint64 last_step;
 } AppState;
 ```
@@ -172,29 +171,29 @@ typedef struct
 
 ```C
 SDL_AppResult SDL_AppInit(void **appstate, int argc, char *argv[]) {
-	if (!SDL_INIT(SDL_INIT_VIDEO)) { return SDL_APP_FAILURE; }
-    AppState *as = (AppState *)SDL_calloc(1, sizeof(AppState));
-    if (!as) {
-        return SDL_APP_FAILURE;
-    }
-    *appstate = as;
-    return SDL_APP_CONTINUE;
+  if (!SDL_INIT(SDL_INIT_VIDEO)) { return SDL_APP_FAILURE; }
+  AppState *as = (AppState *)SDL_calloc(1, sizeof(AppState));
+  if (!as) {
+    return SDL_APP_FAILURE;
+  }
+  *appstate = as;
+  return SDL_APP_CONTINUE;
 }
 ```
 ### SDL_AppIterate
 
 ```C
 SDL_AppResult SDL_AppIterate(void *appstate) {
-	Appstate *as = appstate;
-	static Uint64 past = 0;
-	Uint64 now = SDL_GetTicks();
-	Uint64 DeltaTime = now - past;
+  Appstate *as = appstate;
+  static Uint64 past = 0;
+  Uint64 now = SDL_GetTicks();
+  Uint64 DeltaTime = now - past;
 	/*
-	update()
-	SDL_Render...
+    update()
+    SDL_Render...
 	*/
-	past = now;
-	return SDL_APP_CONTINUE;
+  past = now;
+  return SDL_APP_CONTINUE;
 }
 ```
 
@@ -207,7 +206,10 @@ SDL_AppResult SDL_AppEvent(void *appstate, SDL_Event *event)
 	case SDL_EVENT_QUIT:
 		return SDL_APP_SUCCESS;
 		/*
-		add other SDL EVENTS in this switch statement, and return resolution of event handlers
+    add other SDL EVENTS in this switch statement, and return resolution of event handlers, or call quick functions and break
+    case SDL_EVENT_foo
+      handle_key_event(event->bar);
+      break;
 		*/
 	default:
 		break;
