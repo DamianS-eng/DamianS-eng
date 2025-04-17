@@ -56,10 +56,10 @@ On PC, there are still opinions about input that are underrepresented and assump
 			1. Steam Controller / Steam Deck
 			1. Sony Playstation
 			1. Nintendo Switch 
-				1. Nintendo Switch Joy-Cons (low priority due to beta support)
+				- Nintendo Switch Joy-Cons (low priority due to beta support)
 		1. All Others
 			1. Third Parties
-     	- __Pay attention to how they are designed.__
+     		- __Pay attention to how they are designed.__
 				1. Output Xbox
 				2. DirectInput
 				3. Keyboard (not supported in Steam Input)
