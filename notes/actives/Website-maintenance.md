@@ -26,4 +26,5 @@
 
 # References
 
-[Page Quality](https://landchad.net/page-quality/)
+- [Page Quality](https://landchad.net/page-quality/)
+- [The New Stack article on modern web apps](https://thenewstack.io/the-vintage-technology-that-speeds-up-modern-web-apps)
