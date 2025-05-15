@@ -2,4 +2,4 @@ This is a reference of inspiring designs for Page Not Found default pages for we
 
 # References
 
-[Dribble Designs](https://dribble.com/search/404)
+[Dribbble Designs](https://dribbble.com/search/404)
