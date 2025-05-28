@@ -1,4 +1,4 @@
-![exercise_hero](./exercise_hero.webp)
+<p align="center" style="text-align: center;"><img src="./exercise_hero.webp" alt="exercise_hero" style="display: block; margin-inline:auto;"/></p>
 
 Tags: [[exercise]] [[guide]]
 
