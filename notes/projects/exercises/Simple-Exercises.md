@@ -29,7 +29,14 @@ Repeat. Build up a number or reps with time.  Feel the burn.
 2. Make sure your knee is aligned with your ankle.
 3. Stay in that position for 30 seconds on each side.
   
-This move will help loosen the hip flexors, which will jump start the glute muscles.
+This move will help loosen the hip flexors and enhance the quads.
+
+## Reverse Lunge
+
+1. Stand in place, then step **backward** and lower your back knee.
+  - Make sure your knee is aligned with your ankle.
+
+This variation enforces the hamstrings and glutes.
 
 ## The Hip Thrust. 
 
@@ -39,6 +46,20 @@ This move will help loosen the hip flexors, which will jump start the glute musc
 4. Hold for 20 seconds, then return slowly to the floor.
 
 Keep going. You’ll feel it working almost immediately.
+
+### Hip Thrust with a Barbell
+
+- Bench
+- Bar w/ weights
+- Sneakers for stability
+
+1. Sit upright, back to the bench, legs outstretched and under the bar.
+2. Roll the bar towards your hips. Bend your knees and place feet flat on the ground.
+3. Use elbows to lift upper body and place upper back onto the bench.
+   - There should be a straight line from the shoulders to the knees.
+4. Lower hips to an inch off the ground.
+5. Thrust hips to the start at the top.
+   - **Squeeze** the glutes to push the bar higher and hold for one second.
 
 ## The Knee Lift.
 
