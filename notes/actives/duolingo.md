@@ -56,6 +56,8 @@ Badges and leaderboards are entirely for momentary pride.
 
 ### Vowel pronounciation
 
+Use [this](https://blog.duolingo.com/spanish-alphabet-pronounciation) website for reference.
+
 ## Unit 3
 
 ### `Esta` vs. `es`
