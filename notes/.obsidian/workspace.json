@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "library/Recipes/Chocolate Ice Cream recipe.md",
+                "file": "Optimize Images for Web.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chocolate Ice Cream recipe"
+              "title": "Optimize Images for Web"
             }
           }
         ]
@@ -162,14 +162,20 @@
   },
   "active": "3ca59ab6a2b12478",
   "lastOpenFiles": [
-    "library/Recipes/Carrot Cake recipe.md",
+    "Secure Shell (SSH).md",
+    "Tracking Your Health.md",
+    "Untitled.canvas",
+    "library/apache.md",
+    "library/404-Pages.md",
+    "library/Zero Days/Reddit_Disciplined_Zero_Days.md.md",
+    "library/Zero Days/4RulesOfLife.png",
     "library/Recipes/Chocolate Ice Cream recipe.md",
+    "library/Recipes/Carrot Cake recipe.md",
     "library/Recipes/Banana - Apple Cake recipe.md",
     "library/Recipes/Orange Cake recipe.md",
     "library/Recipes/Mandarin Cake recipe.md",
     "library/Recipes/Tea List.md",
     "actives/Piano/Piano.md",
-    "library/Zero Days/Reddit_Disciplined_Zero_Days.md",
     "actives/Piano/Piano-Major-Scales.mhtml",
     "actives/Piano/Piano Major Scales - overview with pictures.mhtml",
     "actives/Piano",
@@ -177,23 +183,17 @@
     "library/Zero Days/ryan-zero-days.html",
     "library/Virtual-Reality-Internet.md",
     "actives/Piano.md",
-    "Secure Shell (SSH).md",
     "library/All About Building SDL.md",
-    "Untitled.canvas",
     "library/House Buying in New Jersey.md",
     "library/Capacitance.md",
     "library/Bodybuilding-Simplified.md",
-    "library/apache.md",
     "Optimize Images for Web.md",
     "Monero.md",
     "FAA Flying Club.md",
     "actives/Fitbit.md",
-    "Tracking Your Health.md",
     "archive/Skills.md",
     "archive/Modular Laptops.md",
     "actives/Manage Social Contacts.md",
-    "archive/Decentralized Social Media.md",
-    "library/HTML for People.md",
     "Untitled 1.canvas"
   ]
 }

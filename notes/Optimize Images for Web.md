@@ -2,7 +2,7 @@ Tags: [[website]]
 
 # A pragmatic solution
 
-In my opinion, **you need 6 or 7 different image versions** for each image. For an image that takes 100vw on your final site, the target widths could be the following:
+> In my opinion, **you need 6 or 7 different image versions** for each image. For an image that takes 100vw on your final site, the target widths could be the following:
 
 - 1920px 
 	- this covers FullHD screens and up
