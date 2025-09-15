@@ -67,6 +67,14 @@ deb-src http://deb.debian.org/debian bookworm main contrib non-free non-free-fir
 
 Then, `sudo apt get update`.
 
+## Fix graphics drivers
+
+### NVIDIA proprietary drivers
+
+Depending on the generation of graphics card used, there may be several potential features of graphics cards, such as hardware acceleration, missing. This is because the installer, by default, installs open-source firmware drivers during the operating system installation. To resolve, purge the current drivers and reinstall the proprietary drivers from the non-free repository list.
+
+> If additional steps after installation are needed, the desktop environment may break on reboot. Refer to the logs of `dkms` or check for the loaded nvidia module to identify where the problem occured. Most often, some manual building of drivers or certificate signing must be done in order to properly use the proprietary drivers.
+
 ## Mount storage devices
 
 When the computer is powered down and disconnected from its supply, connect the power and data cables to each of the hard drives. Then reconnect power, start back up and log back in.
