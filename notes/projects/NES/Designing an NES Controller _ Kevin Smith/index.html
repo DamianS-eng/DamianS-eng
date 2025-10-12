@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><script src="/devbuild/livereload.js?mindelay=10&amp;v=2&amp;port=443&amp;path=devbuild/livereload" data-no-instant defer></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="color-scheme" content="light dark" />
+	<title>Designing an NES Controller | Written by Kevin Smith</title>
+	<meta name="referrer" content="no-referrer-when-downgrade" />
+	<meta name="description" content="If you could make your own controller for a 1980&rsquo;s game console, you would&hellip; right?
+It turns out to be surprisingly simple and this is a build log of exactly that: a custom Nintendo Entertainment System (NES) controller.
+TODO: All my project files can be found on github.
+I highly recommend it as a fun and rewarding beginner electronics project.
+Related project: NES Game
+Tetris themed art using exposed copper traces and silkscreen. ">
+	<link rel="canonical" href="https://ksmith.info/devbuild/projects/nes-controller/" />
+	<meta property="og:title" content="Designing an NES Controller" />
+  <meta property="og:description" content="If you could make your own controller for a 1980&rsquo;s game console, you would&hellip; right?
+It turns out to be surprisingly simple and this is a build log of exactly that: a custom Nintendo Entertainment System (NES) controller.
+TODO: All my project files can be found on github.
+I highly recommend it as a fun and rewarding beginner electronics project.
+Related project: NES Game
+Tetris themed art using exposed copper traces and silkscreen." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ksmith.info/devbuild/projects/nes-controller/" /><meta property="article:section" content="projects" />
+  <meta property="article:published_time" content="2022-02-07T21:20:30-05:00" />
+  <meta property="article:modified_time" content="2022-02-07T21:20:30-05:00" />
+	<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Designing an NES Controller"/>
+  <meta name="twitter:description" content="If you could make your own controller for a 1980&rsquo;s game console, you would&hellip; right?
+It turns out to be surprisingly simple and this is a build log of exactly that: a custom Nintendo Entertainment System (NES) controller.
+TODO: All my project files can be found on github.
+I highly recommend it as a fun and rewarding beginner electronics project.
+Related project: NES Game
+Tetris themed art using exposed copper traces and silkscreen."/>
+	<link rel="stylesheet" href="./css/water.light.css">
+	<style>
+	</style>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+  <script src="/js/tree.js?v=1"></script>
+</head>
+<body>
+  <div style="display: flex;">
+	  <div style="flex: 1;">
+	    <a href="/" class="title">
+		  <h1>Written by Kevin Smith</h1>
+	    </a>
+	  </div>
+  </div>
+  <!--
+  <nav>	
+		<a href="/devbuild/">Home</a>
+	
+		 | 
+		<a href="/devbuild/blog">Blog</a>
+	
+		 | 
+		<a href="/devbuild/projects">Projects</a>
+	
+		 | 
+		<a href="/devbuild/resume">Resume</a>
+	
+  </nav>
+  -->
+<div id="content">
+<h1>Designing an NES Controller</h1>
+<time datetime="2022-02-07">Feb 7, 2022</time>
+<br><br>
+<p>If you could make your own controller for a 1980&rsquo;s game console, you would&hellip;
+right?</p>
+<p>It turns out to be surprisingly simple and this is a build log of exactly that:
+a custom Nintendo Entertainment System
+(<a href="https://en.wikipedia.org/wiki/Nintendo_Entertainment_System">NES</a>)
+controller.</p>
+<p>NOTE: Kevin Smith said that all the project files can be found <a href="github.com">on github</a>, but this was never updated with a proper GitHub link, nor does he have an account on there.</p>
+<p>I highly recommend it as a fun and rewarding beginner electronics project.</p>
+<p>Related project: <a href="https://ksmith.info/projects/nes-game"><abbr title="Nintendo Entertainent System">NES</abbr> Game</a></p>
+<p><img src="./img/nes-controller/nes-controller-final.webp" alt="Final NES Controller">
+<em>Tetris themed art using exposed copper traces and silkscreen.</em></p>
+
+<div>
+    <h2>Table Of Contents</h2>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#how-nes-controllers-work">How <abbr title="Nintendo Entertainent System">NES</abbr> Controllers Work</a></li>
+    <li><a href="#buying-parts">Buying parts</a></li>
+    <li><a href="#prototype">Prototype</a></li>
+    <li><a href="#pcb-design">PCB design</a></li>
+    <li><a href="#build">Build</a>
+      <ul>
+        <li><a href="#cable">Cable</a></li>
+      </ul>
+    </li>
+    <li><a href="#kit">Kit</a></li>
+    <li><a href="#lessons-learned">Lessons learned</a></li>
+  </ul>
+</nav>
+</div>
+
+
+<h2 id="how-nes-controllers-work">How <abbr title="Nintendo Entertainent System">NES</abbr> Controllers Work</h2>
+<p>I will only give a brief overview here.  <a href="https://www.youtube.com/watch?v=nAStgQzPrAQ">This
+video</a> by NesHacker and <a href="https://tresi.github.io/nes/">this
+page</a> by tresi cover the topic wonderfully and in
+more detail. No links to <abbr title="Nintendo Entertainent System">NES</abbr> resources would be complete without also
+mentioning the <a href="https://wiki.nesdev.org/">NESDev Wiki</a>.</p>
+<p>Let&rsquo;s get to it.</p>
+<p>An <abbr title="Nintendo Entertainent System">NES</abbr> controller has eight buttons:</p>
+<ul>
+<li>A,</li>
+<li>B,</li>
+<li>Start,</li>
+<li>Select,</li>
+<li>Up,</li>
+<li>Down,</li>
+<li>Left,</li>
+<li>Right.</li></ul> 
+<p>All buttons are connected to input pins on a shift register which in
+turn is connected to the console&rsquo;s controller port.</p>
+<p>When a button is pressed, the ciruit is closed and the associated pin on the
+shift register is directly connected to ground (GND). This is the LOW state or
+0V.</p>
+<p>So what happens if the button is not pressed? That&rsquo;s where the resistors come
+in. When the circuit is open, the pin is not connected to anything. This is
+considered a floating state where it could float between 0V (LOW) and +5V
+(HIGH). To avoid this uncertainty, a relatively high value resistor is used to
+pull up the voltage to +5V (HIGH) when the button is not pressed. This is
+called a <a href="https://en.wikipedia.org/wiki/Pull-up_resistor">pull-up resistor</a>.</p>
+<p>Now on to the shift register itself. There are 16 pins total on the shift register.</p>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Count</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unused</td>
+<td>3</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Inputs</td>
+<td>8</td>
+<td>Connected to buttons and are either LOW or HIGH depending if a button is pressed or not.</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>1</td>
+<td>Connected to ground.</td>
+</tr>
+<tr>
+<td>+5V</td>
+<td>1</td>
+<td>Connected to +5V power source.</td>
+</tr>
+<tr>
+<td>Clock</td>
+<td>1</td>
+<td>Console switches the clock signal from HIGH to LOW to synchronize communication between it and the controller.</td>
+</tr>
+<tr>
+<td>Latch</td>
+<td>1</td>
+<td>Console sets this HIGH to store all input states in the &lsquo;register&rsquo;.</td>
+</tr>
+<tr>
+<td>Data</td>
+<td>1</td>
+<td>Console reads the state of each button serially (one at a time).</td>
+</tr>
+</tbody>
+</table>
+<p>The controller is powered by the <abbr title="Nintendo Entertainent System">NES</abbr> console so the GND and +5V pins connect to
+the console.</p>
+<p>The clock, data and latch are used to transfer the button states serially (one
+at a time) to the console.</p>
+<p>An <abbr title="Nintendo Entertainent System">NES</abbr> game has code that polls the controller and serially reads the state of
+each button. In fact, you can check out my <a href="https://ksmith.info/projects/nes-game"><abbr title="Nintendo Entertainent System">NES</abbr> Game</a> to
+see that in action!</p>
+<h2 id="buying-parts">Buying parts</h2>
+<p>First, there is some basic electronics equipment you&rsquo;ll need:</p>
+<ul>
+<li>Soldering iron</li>
+<li>Solder</li>
+<li>Wire cutters</li>
+</ul>
+<p>Next, is the bill of materials (BOM):</p>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Qty</th>
+<th>Price/Unit</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.6k Ohm Resistors</td>
+<td>2</td>
+<td>$0.10</td>
+<td><a href="https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CF14JT3K60/1741381">Digi-Key</a></td>
+</tr>
+<tr>
+<td>1k Ohm resistors</td>
+<td>8</td>
+<td>$0.10</td>
+<td><a href="https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CF14JT1K00/1741314">Digi-Key</a></td>
+</tr>
+<tr>
+<td>Buttons</td>
+<td>8</td>
+<td>$0.35</td>
+<td><a href="https://www.digikey.com/en/products/detail/e-switch/TL1105AF100Q/378961">Digi-Key</a></td>
+</tr>
+<tr>
+<td>Female Socket</td>
+<td>1</td>
+<td>$1.84</td>
+<td><a href="https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/5-535541-3/1092990">Digi-Key</a></td>
+</tr>
+<tr>
+<td>Male Header</td>
+<td>1</td>
+<td>$0.43</td>
+<td><a href="https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300511021/4846830">Digi-Key</a></td>
+</tr>
+<tr>
+<td>Shift Register</td>
+<td>1</td>
+<td>$0.73</td>
+<td><a href="https://www.digikey.com/en/products/detail/texas-instruments/CD4021BE/67261">Digi-Key</a></td>
+</tr>
+<tr>
+<td>Controller Extension Cable</td>
+<td>1</td>
+<td>$5 - $8</td>
+<td><a href="https://smile.amazon.com/s?k=nes+cable+extension">Amazon search</a></td>
+</tr>
+<tr>
+<td>PCB</td>
+<td>3</td>
+<td>$36.75</td>
+<td><a href="https://oshpark.com/">OSH Park</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>NOTE:</strong> OSH Park has a minimum of 3 boards. You can&rsquo;t order just one, so you
+may want to get 3 boards worth of components and make 3 controllers!</p>
+<p><strong>TIP:</strong> Ask your local used game store if they have any broken <abbr title="Nintendo Entertainent System">NES</abbr>
+controllers. You just need to scavange a good cable and recycling is a great
+option!</p>
+<p>Make sure to search around online. You may find better prices for any item!</p>
+<h2 id="prototype">Prototype</h2>
+<p>Once my parts arrived, I used a breadboard to prototype the controller and
+ensure my understanding of the circuit was correct. The most expensive part is
+the PCB so make sure your circuit works first.</p>
+<p>I have a bad habit of using long jumper wires for everything. Definitely could
+be cleaner, but hey it worked!</p>
+<p>After playing a few games of Tetris with my prototype, it was back to designing
+the PCB.</p>
+<p><img src="./img/nes-controller/nes-controller-breadboard.webp" alt="Breadboard Prototype"></p>
+<h2 id="pcb-design">PCB design</h2>
+<p>I used <a href="https://www.kicad.org/">KiCad</a> to design my printed circuit board
+(<a href="https://en.wikipedia.org/wiki/Printed_circuit_board">PCB</a>). It&rsquo;s free,
+open-source and a very powerful tool. I only needed to learn a tiny fraction of
+features to complete this project.</p>
+<p><img src="./img/nes-controller/nes-controller-schematic.webp" alt="Layout Schematic">
+<em>Proper conventions for circuit diagrams were probably not followed, so
+appologies for that.</em></p>
+<p><img src="./img/nes-controller/nes-controller-pcb-layout-no-art.webp" alt="PCB Layout - No Art">
+<img src="./img/nes-controller/nes-controller-pcb-layout.webp" alt="PCB Layout"></p>
+<h2 id="build">Build</h2>
+<p>About a week an half later, a lovely purple package showed up at my door.</p>
+<p><img src="./img/nes-controller/nes-controller-oshpark-package.webp" alt="OSHPark Package">
+<img src="./img/nes-controller/nes-controller-workbench.webp" alt="Workbench"></p>
+<div style="display:flex">
+  <div class="flex: 50%;padding: 5px; @media screen and (max-width: 500px) { width: 100%; }">
+	<img alt="Soldering" src="./img/nes-controller/nes-controller-soldering.webp" style="width:100%">
+  </div>
+  <div class="flex: 50%;padding: 5px; @media screen and (max-width: 500px) { width: 100%; }">
+	<img alt="Trimming" src="./img/nes-controller/nes-controller-trimming.webp" style="width:100%">
+  </div>
+</div>
+
+<h3 id="cable">Cable</h3>
+<p><img src="./img/nes-controller/nes-controller-cable.webp" alt="Cable">
+<img src="./img/nes-controller/nes-controller-cable-nes-end.webp" alt="Cable NES End">
+<img src="./img/nes-controller/nes-controller-cable-notes.webp" alt="Cable Notes"></p>
+<p><img src="./img/nes-controller/nes-controller-playing-game.webp" alt="Using It"></p>
+<h2 id="kit">Kit</h2>
+<p><img src="./img/nes-controller/nes-controller-kit.webp" alt="NES Controller Kit"></p>
+<h2 id="lessons-learned">Lessons learned</h2>
+<blockquote>
+<ol>
+<li>Cable strain relief is a must.</li>
+</ol>
+</blockquote>
+<p>Plug in the controller, sit back on a couch and&hellip; oops. The cable wasn&rsquo;t quite
+long enough, the connector tore off and you have to resolder tiny wires to it.
+Not fun. This is by far the worst part of my design. I have zero strain relief.
+One accidental tug and game over.</p>
+<p>The official <abbr title="Nintendo Entertainent System">NES</abbr> controller designed strain relief into the case itself wrapping
+the cable around plastic posts. If I ever get around to making a case for mine,
+I would seriously consider this approach.</p>
+<blockquote>
+<ol start="2">
+<li>Don&rsquo;t sacrifice too much usability for aesthetics.</li>
+</ol>
+</blockquote>
+<p>I had seen so many beautiful PCB designs that are essentially pieces of art
+making creative use of exposed traces and multiple silkscreen layers and I
+wanted to do the same!</p>
+<p>My first few prototypes eschewed all functional silkscreen markings in favor of
+pure art. As soon as you start soldering parts on you realize just how useful
+those silkscreen labels and footprints can be. Is the shift register backwards?
+Do I use the 1k Ohm or 3.6k Ohm resiters here?</p>
+<p>When I threw together a kit for my friend, it became even more glaringly
+obvious when I felt the need to write extra notes about the pinouts on a piece
+of paper. Should have used a silkscreen layer on the bottom of the board!</p>
+<blockquote>
+<ol start="3">
+<li>PCBs are prickly on the back.</li>
+</ol>
+</blockquote>
+<p>Since I never made a case for the controller, you hold the PCB itself. Turns
+out the solder joints with through hole components are kinda sorta prickiy.
+Like uncomfortably prickly. Besides all the other reasons projects shouldn&rsquo;t
+have exposed boards, this one just plain hurts.</p>
+<p>My design did include a mounting hole in each corner of the board. The idea was
+to sandwhich the pretty PCB between two clear pieces of acrylic with short
+standoffs.  Maybe that will happen some day&hellip;</p>
+</body>
+</html>

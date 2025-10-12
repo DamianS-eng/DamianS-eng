@@ -133,6 +133,7 @@ For specific titles, refer to [ProtonDB](https://www.protondb.com) for the recom
 - [VR On Linux GitLab](https://gitlab.com/vr-on-linux/VR-on-Linux)
 - [Valve FAQ on Steam VR Linux](https://help.steampowered.com/en/faqs/view/18A4-1E10-8A94-3DDA)
 - [Migrate from Windows to Linux OS](https://www.youtube.com/watch?v=Fb8bXP8xIBk)
+- [Linux VR Adventures Wiki](https://lvra.gitlab.io/)
 
 [^1]:*cough*MAS*cough*
 ```powershell
