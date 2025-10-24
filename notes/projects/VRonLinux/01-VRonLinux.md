@@ -6,10 +6,10 @@ Migrate from a Windows 10 OS installation of Steam VR to a Linux OS.
 
 ## Things to Move
 
-Move all these off of Aorus.
+Move all these off of the former PC.
 
 - Non-Steam titles
-- Steam VR Titles to ext4
+- Steam VR Titles to a drive formatted to ext4
 - Delisted or restructured titles
 
 ### Graphics Driver
@@ -68,8 +68,8 @@ Dual-booting is the old recommended way, but consider having the main Linux OS o
 - Linux Install
   - [Fedora (Latest) w/ KDE Plasma Desktop](https://fedoraproject.org/spins/kde)
   - Officially, Steam recommends using the native distribution package, running over Plasma Wayland or KDE X11 on an Arch-based distribution. 
-  - One Video mentions using GNOME instead. (https://www.youtube.com/watch?v=6X-XMg4XhPc)
-  - [NoburaOS](https://noburaproject.org) is a SteamOS-like derivative hobby distribution for NVIDIA GPUs. AMD alternative is [ChimeraOS](https://chimeraos.org/)
+  - This [video](https://www.youtube.com/watch?v=6X-XMg4XhPc) mentions using GNOME instead. Your mileage may vary.
+  - [NoburaOS](https://noburaproject.org) is a SteamOS-like derivative hobby distribution that has a lot of professional tweaks for NVIDIA GPUs. AMD alternative is [ChimeraOS](https://chimeraos.org/)
 
 ## SteamVR Games
 
@@ -79,20 +79,15 @@ Once Steam and Steam VR are installed on the Linux OS, go to [ProtonDB](https://
 
 - This will help document recommended configurations for self and others.
 
-
 #### First Time Steam VR
 
 As of v.2.9.6
 
-Get headset connected and powered on.
-
-First, Steam VR will request superuser privileges to complete setup.
-
-Then, Steam VR Status will launch, with a prompt to set OpenXR runtime as default. Accept.
-
-Room Setup should pop up. If it doesn't, go to the dropdown menu on the corner of the status window. Follow the setup.
-
-If NOT using Meta, keep OpenXR's Meta Plugin Compatibility set to off, not automatic.
+1. Get headset connected and powered on.
+1. First, Steam VR will request superuser privileges to complete setup.
+1. Steam VR Status will launch, with a prompt to set OpenXR runtime as default. Accept.
+1. Room Setup should pop up. If it doesn't, go to the dropdown menu on the corner of the status window. Follow the setup.
+  - If NOT using Meta, keep OpenXR's Meta Plugin Compatibility set to off, not automatic.
 
 #### Steam Play (Proton)
 
@@ -104,7 +99,9 @@ Enable Compatibility for all titles.
 1. _Settings_
 1. _Compatibility_
 1. _Enable Steam Play for all other titles_
-1. _Run other titles with_ the latest version of Proton_
+1. _Run other titles with_ the latest version of Proton
+
+### Proton Database
 
 For specific titles, refer to [ProtonDB](https://www.protondb.com) for the recommended Proton version and any necessary tweaks.
 
@@ -115,7 +112,7 @@ For specific titles, refer to [ProtonDB](https://www.protondb.com) for the recom
 1. Choose a specific version according to ProtonDB.
 1. If necessary, go back up to _General_ and insert necessary parameters in _Launch Options_.
 
-### Titles not on Steamdb
+#### Titles not on Steamdb or Protondb
 
 - Catch & Release
 - Glyph (delisted)
@@ -127,6 +124,28 @@ For specific titles, refer to [ProtonDB](https://www.protondb.com) for the recom
 - Westworld Awakening
 - Allumette
 
+### Linux VR Adventure Database
+
+Alternatively to ProtonDB is [Linux VR Adventure Database](https://db.vronlinux.org/), used specifically for VR titles!
+
+Similarly to ProtonDB, search for a title, then check its reports for steps on how to get it running.
+
+- A [GitHub](https://github.com/Respuit/VRDB/issues) account is required to submit reports.
+- Provide the following in report for Linux VR DB:
+  - Which method?
+    - SteamVR
+    - Monado
+    - ALVR
+    - WiVRN
+  - Which distro?
+    - Release version and its kernel
+  - Which GPU vendor?
+    - Proprietary? Open?
+    - and which driver version?
+  - Which headset?
+  - Which Proton version, if required?
+  - Any details about needed tweaks
+    - Screenshots or code blocks are nice
 
 ## References
 
