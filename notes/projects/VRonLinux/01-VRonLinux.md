@@ -154,6 +154,7 @@ Similarly to ProtonDB, search for a title, then check its reports for steps on h
 - [Migrate from Windows to Linux OS](https://www.youtube.com/watch?v=Fb8bXP8xIBk)
 - [Linux VR Adventures Wiki](https://lvra.gitlab.io/)
 - [A standalone and succinct guide to setup Steam VR on Ubuntu](https://linuxvox.com/blog/steamvr-linux/)
+- [Some VR problems encountered and documented](https://piejacker.net/problems.html)
 
 [^1]:*cough*MAS*cough*
 ```powershell
