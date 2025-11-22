@@ -10,11 +10,15 @@
 |Country Peach Passion|--|X| |
 |Cinnamon Apple Spice|--|X| |
 |Toasted Coconut - Almond Bark |X|--| |
-|Nighty Night Extra|--|X| |
+|Nighty Night (Lemon Balm)|--|X| |
+|Nighty Night (Valerian)|--|X| |
 |Oolong|X|--| |
 |Throat Comfort|--|X| |
 |Tangerine Orange Zinger|--|X| |
 |Lemon Zinger|--|X| |
 |Ginger + Probiotics|--|X| |
+|Wild Berries|--|X| |
+|Yogi Ginger|--|X| |
+|Mango & Pineapple|--|X| |
 
 </div>
