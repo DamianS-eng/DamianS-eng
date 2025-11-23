@@ -24,39 +24,39 @@ const teaList = [
 	'containsCaffeine': false
   },
   {
-	'name': 'Country Peach Passion',
+	'name': 'Cinnamon Apple Spice',
 	'containsCaffeine': false
   },
   {
-	'name': 'Country Peach Passion',
+	'name': 'Nighty Night (Lemon Balm)',
 	'containsCaffeine': false
   },
   {
-	'name': 'Country Peach Passion',
+	'name': 'Nighty Night (Valerian)',
 	'containsCaffeine': false
   },
   {
-	'name': 'Country Peach Passion',
+	'name': 'Throat Comfort',
 	'containsCaffeine': false
   },
   {
-	'name': 'Country Peach Passion',
+	'name': 'Tangerine Orange Zinger',
 	'containsCaffeine': false
   },
   {
-	'name': 'Country Peach Passion',
+	'name': 'Lemon Zinger',
 	'containsCaffeine': false
   },
   {
-	'name': 'Country Peach Passion',
+	'name': 'Ginger + Probiotics',
 	'containsCaffeine': false
   },
   {
-	'name': 'Country Peach Passion',
+	'name': 'Wild Berries',
 	'containsCaffeine': false
   },
   {
-	'name': 'Country Peach Passion',
+	'name': 'Yogi Ginger',
 	'containsCaffeine': false
   },
   {

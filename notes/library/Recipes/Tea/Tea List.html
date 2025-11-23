@@ -1,12 +1,68 @@
-
+`
 <!DOCTYPE html>
 <html lang='en-us'>
 <head>
 <title>Damian's Tea List</title>
+<style>
+	html {
+		line-height: 1.4;
+		font-family: sans-serif;
+	}
+	table {
+		margin-inline: auto;
+	}
+	table th,
+	table td {
+		border: .1ch solid black;
+		text-align: center;
+	}
+	table td {
+		padding: .5ch;
+	}
+</style>
 </head>
 <body>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tea Name</th>
+                    <th>Caffeine</th>
+                    <th>Caffeine-Free</th>
+                    <th>Checkmarks</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </main>
 </body>
 <script src='./tea.js'></script>
 <script>
+    const tBody = document.querySelector('tbody');
+    function insertTeas(list) {
+        const docfrag = document.createDocumentFragment();
+        list.forEach((i) => {
+            const tr = document.createElement('tr');
+            const teaName = document.createElement('td');
+            teaName.innerText = i.name;
+            tr.appendChild(teaName);
+            const caffeine = document.createElement('td');
+            if (i.containsCaffeine) {
+                caffeine.innerText = 'X';
+            }
+            tr.appendChild(caffeine);
+            const nocaffeine = document.createElement('td');
+            if (!i.containsCaffeine) {
+                nocaffeine.innerText = 'X';
+            }
+            tr.appendChild(nocaffeine);
+            const checkmarks = document.createElement('td');
+            tr.appendChild(checkmarks);
+            docfrag.appendChild(tr);
+        });
+        return docfrag;
+    }
+    tBody?.appendChild(insertTeas(teaList));
 </script>
 </html>
