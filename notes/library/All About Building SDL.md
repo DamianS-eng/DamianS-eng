@@ -242,6 +242,11 @@ void SDL_AppQuit(void *appstate, SDL_AppResult result)
 }
 ```
 ## Frames Per Second (FPS)
+
+## WebAssembly
+
+Consider [emscripten](https://emscripten.org)
+
 # References
 
 - [Mike Shah Course](https://www.youtube.com/watch?v=1S5qlQ7U34M)
