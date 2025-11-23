@@ -49,3 +49,13 @@ echo '%_topdir ${RPM_DIR}' >> ~/.rpmmacros
 ```bash
 mkdir -p ${RPM_DIR}/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
 ```
+
+# Issues
+
+## Start KDE from Command Line
+
+```bash
+sudo dnf install sddm
+sudo systemctl set-default graphical.target
+sudo systemctl start display-manager.service
+```
