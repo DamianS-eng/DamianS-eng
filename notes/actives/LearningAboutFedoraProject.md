@@ -50,6 +50,13 @@ echo '%_topdir ${RPM_DIR}' >> ~/.rpmmacros
 mkdir -p ${RPM_DIR}/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
 ```
 
+# Udev
+
+## References
+
+- [Arch Linux Wiki all about udev](https://wiki.archlinux.org/title/Udev)
+- [Reactvated Documentation](https://reactivated.net/writing_udev_rules.html)
+
 # Issues
 
 ## Start KDE from Command Line
