@@ -3,7 +3,7 @@
 Copyright (c) 2014-2022 The Monero Project.  
 Portions Copyright (c) 2012-2013 The Cryptonote developers.
 
-Tags: [[cryptocurrency]] [[website]]
+Tags: [[cryptocurrency]] [[website]] [[finance]]
 ## Table of Contents
 
   - [Development resources](#development-resources)
@@ -26,6 +26,7 @@ Tags: [[cryptocurrency]] [[website]]
   - [Pruning](#Pruning)
   - [Debugging](#Debugging)
   - [Known issues](#known-issues)
+  - [Additional Resources](#Additional-Resources)
 
 ## Development resources
 
@@ -859,3 +860,7 @@ Because of the nature of the socket-based protocols that drive monero, certain p
 Certain blockchain "features" can be considered "bugs" if misused correctly. Consequently, please consider the following:
 
 - When receiving monero, be aware that it may be locked for an arbitrary time if the sender elected to, preventing you from spending that monero until the lock time expires. You may want to hold off acting upon such a transaction until the unlock time lapses. To get a sense of that time, you can consider the remaining blocktime until unlock as seen in the `show_transfers` command.
+
+# Additional Resources
+
+- [Voidfox blogpost about Custom Merchant Service Providers for Payments](https://voidfox.com/blog/payment_processor_fun_2025_making_your_own_msp)
