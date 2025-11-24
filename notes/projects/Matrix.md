@@ -5,3 +5,4 @@
 # References
 
 - [Matrix documentation](https://matrix.org/docs/communities/getting-started)
+- [Matrix Homeserver](https://matrix.org/homeserver/official)
