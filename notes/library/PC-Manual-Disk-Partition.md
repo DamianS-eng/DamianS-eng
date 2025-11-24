@@ -59,4 +59,5 @@ GRUB the bootloader will be installed on the MBR (Master Boot Record) of the dis
 
 # References
 
-[Linux BSDos Guide](https://linuxbsdos.com/2010/12/28/manual-disk-partitioning-guide-for-linux-mint-debian-edition)
+- [Linux BSDos Guide](https://linuxbsdos.com/2010/12/28/manual-disk-partitioning-guide-for-linux-mint-debian-edition)
+- [LinuxVox Guide on Partitions](https://linuxvox.com/blog/how-to-set-up-linux-partitions/)
