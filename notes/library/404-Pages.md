@@ -14,7 +14,7 @@ In case there's no script or program handling 404 pages, do it yourself.
 
 1. Provide a file called `.htaccess` in the root directory.
 2. Provide the designed 404 page in the root directory.
-3. Provide the following line: 
+3. Inside `.htaccess`,  provide the following line: 
 ```
 ErrorDocument 404 /not-found-page.html
 ```
@@ -33,6 +33,7 @@ vi httpd.conf
 AllowOverride All
 </Directory>
 ```
+> Of course, adjust this for Virtual Server configuration files. 
 # References
 
 - [Dribbble Designs](https://dribbble.com/search/404)

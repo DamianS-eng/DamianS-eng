@@ -1,5 +1,5 @@
 # VR On Linux
-Tags: [[Valve Steam]][[Virtual Reality]]
+Tags: [[Valve Steam]] [[Virtual Reality]]
 ## Objective
 
 Migrate from a Windows 10 OS installation of Steam VR to a Linux OS.
