@@ -1,5 +1,5 @@
 # Tags 
-[[ssh]] [[computers]] [[command line]]
+[[ssh]] [[computers]] [[command line]] [[command-line]]
 
 # References
 [Windows Authentication on GitHub](https://dev.to/jajera/how-to-configure-ssh-for-github-authentication-on-windows-2484)

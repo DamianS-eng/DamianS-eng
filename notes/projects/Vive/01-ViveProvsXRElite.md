@@ -15,6 +15,7 @@ Each headset has:
 - Lighthouse Tracking
  - The benefits of Lighthouse
  Playable in any setting, recommended in dark environment
+ Compatible with all other lighthouse controllers 
  - The cons
  Permanent bases and lots of setup
  PC required, no standalone
@@ -33,6 +34,7 @@ Each headset has:
  Not reliable
  Need to play in well-lit area
  Some setup if moving between spaces
+ Only use proprietary controllers
 
 #### XR Elite Accessories
 - XR Elite Head Tracking Mount

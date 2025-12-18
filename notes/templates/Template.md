@@ -2,7 +2,7 @@
 
 Stat:
 
-Tags: 
+Tags: [Test](../Monero.md) [[Secure Shell (SSH)]] 
 
 # {{Title}}
 

@@ -1,5 +1,7 @@
 # Set Up Termux on Android
 
+Tags: [[Linux]] [[command-line]] 
+
 ## First, what is Termux?
 
 Termux is a command line interface on Arnoid mobile phones. This is useful for running linux programs for automation or specfiic functions not functionable with apps, either from the Play Store or sideloaded from F-droid.

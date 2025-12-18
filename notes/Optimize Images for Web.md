@@ -1,4 +1,4 @@
-Tags: [[website]] 
+Tags: [[website]] [[image]] [[ImageMagick]]
 
 # A pragmatic solution
 

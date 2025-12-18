@@ -1,6 +1,6 @@
 # Bodybuilding Simplified
 
-Tags: [[exercise]] [[health]] [[guide]]
+Tags: [[Exercises]] [[health]] [[guide]]
 
 From the dude who simplifies bodybuilding.
 
