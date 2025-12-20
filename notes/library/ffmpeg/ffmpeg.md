@@ -30,14 +30,20 @@ ffmpeg -ss 30 -t 3 -i input -c copy output
 
 ```bash
 -c:v libaom-av1
+-c:v libvpx-vp9
 -c:a libopus
 ```
 
+```bash
+ffmpeg -i {{input}} -map 0 -c:v libvpx-vp9 -c:a copy -c:s copy -b:v 1M -quality best -speed 1 -crf 26 output\ -\ vp9.mkv
+```
 ## Extract frames to files
 ```bash
 ffmpeg -i *.mp4 -r 24 output-image-%3d.png
+ffmpeg i- input.mp4 -vf fps=# newfolder/out%d.png
 ```
 
+## 
 ## Filter Options
 
 ### Output video to gif
@@ -50,12 +56,17 @@ ffmpeg -i input -filter_complex "[0:v] fps=12,scale=480:-1,split [a][b];[a] pale
 ffmpeg -i input -vf "fps=10,scale=-1:720:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0  output
 ```
 
+## Merge image frames to a video
+
+```bash
+ffmpeg -framerate # -i newfolder/out%d.png -c:v libx264 -r {{ output }}
+```
 # Hardware Acceleration
 
 ## NVIDIA
 
 ```bash
-
+ffmpeg -hwaccel cuda -hwaccel_output_format cuda -i {{input}} -filter:v "scale_cuda=-1:#,fps=#" -c:a copy -c:v h264_nvenc -b:v 5M {{output}}
 ```
 
 > Note: NVIDIA's hardware acceleration, while powerful, is only capable of encoding and decoding specific h264/5 codecs. It is only recommended to use this format outside of network files.
