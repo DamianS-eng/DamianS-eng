@@ -1,6 +1,6 @@
 # MakeMKV
 
-References: [[ blu-ray ]] [[ linux ]] [[ source ]]
+References: [[ blu-ray ]] [[Linux]] [[ source ]]
 
 # About the Bash Script
 
