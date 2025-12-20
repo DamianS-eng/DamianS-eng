@@ -1,6 +1,6 @@
 # You can do this on Linux but not on Windows
 
-Tags: [[linux]] [[top-ten]]
+Tags: [[Linux]] [[top-ten]]
 
 ## Top Eleven Things You Can Do
 
