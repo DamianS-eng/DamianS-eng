@@ -61,6 +61,11 @@ ffmpeg -i input -vf "fps=10,scale=-1:720:flags=lanczos,split[s0][s1];[s0]palette
 ```bash
 ffmpeg -framerate # -i newfolder/out%d.png -c:v libx264 -r {{ output }}
 ```
+
+## Merge two audio tracks together
+```bash
+ffmpeg -i input -i input2 -filter_complex amerge=inputs=2 -ac 2 output
+```
 # Hardware Acceleration
 
 ## NVIDIA
@@ -75,6 +80,16 @@ ffmpeg -hwaccel cuda -hwaccel_output_format cuda -i {{input}} -filter:v "scale_c
 
 # Concatenate
 ```bash
+cat mylist.txt
+```
+> file '/path/to/file1'
+>
+> file '/path/to/file2'
+>
+> file '/path/to/file3'
+
+```bash
+
 ffmpeg -safe 0 -f concat -i combine.txt -c copy output_complete.mkv
 ```
 
