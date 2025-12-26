@@ -1,5 +1,7 @@
 # Use this to fix firmware compilation issues
 
+Tags: [[Linux]] [[command-line]] 
+
 DKMS (dkms-3.1.5) `make.log` for `blackmagic/14.4.1a4` for `kernel 6.13.1-arch1-1 (x86_64)`
 
 > [Makefile:44: all] Error 2
