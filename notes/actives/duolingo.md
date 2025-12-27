@@ -448,5 +448,9 @@ Must include **no** for the following:
 - ponga
 - vaya
 
+# References
+
+[Learn languages from children's books.](https://blog.duolingo.com/childrens-materials-for-language-learning)
+
 [^1]: Without payment, the entire curriculum of Duolingo is still accessible, but a heart system is in play, restricting use of the app for each incorrect answer, refillable over time or after completing certain challenges. Practice without hearts is possible, but some practice modes like speaking and listening are restricted to the paid plan.
 [^2]: Voice-speaking exercises are only accessible on mobile apps or Chromium-based PC browsers, because Duolingo has not implemented support for microphone access on Mozilla and other privacy-based browsers. The microphone reles on Google's Voice Search and automatic translation.

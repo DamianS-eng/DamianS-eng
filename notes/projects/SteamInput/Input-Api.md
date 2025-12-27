@@ -189,4 +189,5 @@ Use the latest Steamworks API, and lock Steam onto your game via its id.
 
 # References
 
-[Steamworks Documentation - Getting Started for Developers](https://partner.steamgames.com/doc/features/steam_controller/getting_started_for_devs)
+- [Steamworks Documentation - Getting Started for Developers](https://partner.steamgames.com/doc/features/steam_controller/getting_started_for_devs)
+- [Steamworks Documentation - Legacy Bindings](https://partner.steamgames.com/doc/features/steam_controller/legacy_mode)
