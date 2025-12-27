@@ -31,3 +31,4 @@ This is a quick way to get the makemkv tool and command-line program set up on y
 
 - [MakeMKV website](https://www.makemkv.com/download)
 - [Info about Linux build](http://www.makemkv.com/forum/viewtopic.php?f=3&t=224)
+- [Usage txt](https://makemkv.com/developers/usage.txt)

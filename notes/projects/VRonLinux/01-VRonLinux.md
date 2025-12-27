@@ -50,7 +50,7 @@ Designed for Windows.
 > I am the lord thou OS, you shall not have any other OS besides me.
 > Microsoft
 
-Dual-booting is the old recommended way, but consider having the main Linux OS on the M.2, and dedicate Windows 10 and an NTFS portion on a separate SSD. 
+Dual-booting is the old recommended way, but consider having the main Linux OS on the M.2, and dedicate Windows 10 and an [NTFS](https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows) partition on a separate SSD. 
 
 1. Install a clean Windows 10 operating system.
 2. Use a Live USB to boot into a Linux distro.
