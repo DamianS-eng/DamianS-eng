@@ -1,7 +1,11 @@
+# The Piano
+
 Tags: [[piano]]
 
-[Piano Major Scales](Piano-Major-Scales.mhtml)
+## Scales 
+
+> [Piano Major Scales](Piano-Major-Scales.mhtml)
 
 # Resources
 
-[Piano Scales]([Piano scales - learn how to play scales on piano](https://www.pianoscales.org/))
+[Piano scales - learn how to play scales on piano](https://www.pianoscales.org/)
