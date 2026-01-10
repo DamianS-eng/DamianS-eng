@@ -149,9 +149,73 @@ diff -Naur ./blackmagic-14.4.1a4.orig/Makefile ./blackmagic-14.4.1a4/Makefile
 
 # Finally, rebuild
 
-Confirmed working on Fedora 41 with kernel 6.13.4-200.fc41.x86_64
+Confirmed working on Fedora 41 with kernel 6.13.4-200.fc41.x86_6
 
 ```bash
 sudo dkms build -m blackmagic-io -v 14.4.1a4 -k (uname -r)
 sudo dkms install -m blackmagic-io -v 14.4.1a4 -k (uname -r)
 ```
+
+# Problems installing provided rpm?
+>
+> Internal Error: running transaction: package does not verify: no digest
+>
+The provided package was built with outdated cryptographic digest, and modern Discover wants the rpm packaged with stricter security rules.
+
+## Confirm the issue
+```bash
+rpm -Kv desktopvideo-15.3.1a4.x86_64.rpm 
+```
+>
+> desktopvideo-15.3.1a4.x86_64.rpm:
+>    Header SHA3-256 digest: NOTFOUND
+>    Header SHA256 digest: NOTFOUND
+>    Header SHA1 digest: NOTFOUND
+>    Payload SHA3-256 digest: NOTFOUND
+>    Payload SHA3-256 ALT digest: NOTFOUND
+>    Payload SHA512 digest: NOTFOUND
+>    Payload SHA512 ALT digest: NOTFOUND
+>    Payload SHA256 digest: NOTFOUND
+>    Payload SHA256 ALT digest: NOTFOUND
+>    Legacy MD5 digest: NOTFOUND
+
+## Confirm your system has the proper algorithms
+
+>
+> ~/.rpmmacros
+>
+
+> %_source_filedigest_algorithm 8
+> %_binary_filedigest_algorithm 8
+> %_source_payload w9.gzdio
+> %_binary_payload w9.gzdio
+
+
+## To Fix:
+```bash
+sudo dnf install rpm-build rpmdevtools
+rpmdev-setuptree
+cp desktopvideo-15.3.1a4-x86_64.tar.gz ~/rpmbuild/SOURCES/
+cp desktopvideo-15.3.1a4.x86_64.spec ~/rpmbuild/SPECS/
+```
+```bash
+rpmbuild -ba ~/rpmbuild/SPECS/desktopvideo-15.3.1a4.x86_64.spec
+```
+The above fails because of empty rpaths?
+
+If this happens, add the following to the end of the `%install` section in the `.spec`.
+
+> # Remove RPATH from ELF binaries only
+> find "$RPM_BUILD_ROOT" -type f -print0 | while IFS= read -r -d '' f; do
+>    if file "$f" | grep -qE 'ELF .* (executable|shared object)'; then
+>        chrpath --delete "$f" >/dev/null 2>&1 || :
+>    fi
+> done
+
+Otherwise, insert this above `%install`
+
+> %global __brp_check_rpaths %{nil}
+
+Currently, this results in more build errors...
+
+The output of compatibile builds will be provided in `~/rpmbuild/`
