@@ -127,6 +127,12 @@ Specific games may need a specific Proton version, or additional launch paramete
 
 Steam VR can run natively, but other games that don't have a native Linux build will need compatibility checks.
 
+### Multimedia
+
+```bash
+sudo dnf4 group install multimedia sound-and-video openh264 gstreamer1-plugin-openh264
+```
+
 ## ProtonDB
 
 Steam won't know about VR compatibility, so use [ProtonDB](https://www.protondb.com)
@@ -139,7 +145,7 @@ Steam won't know about VR compatibility, so use [ProtonDB](https://www.protondb.
 
 # Troubleshooting
 
-[If Controller or runtime issues, move game install to default, or add GAMECOMPAT path in launch options.] (https://github.com/ValveSoftware/SteamVR-for-Linux/issues/775)
+[If Controller or runtime issues, move game install to default, or add GAMECOMPAT path in launch options.](https://github.com/ValveSoftware/SteamVR-for-Linux/issues/775)
 
 # References
 
