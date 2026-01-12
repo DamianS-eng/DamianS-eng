@@ -168,16 +168,27 @@ rpm -Kv desktopvideo-15.3.1a4.x86_64.rpm
 ```
 >
 > desktopvideo-15.3.1a4.x86_64.rpm:
+>
 >    Header SHA3-256 digest: NOTFOUND
+>
 >    Header SHA256 digest: NOTFOUND
+>
 >    Header SHA1 digest: NOTFOUND
+>
 >    Payload SHA3-256 digest: NOTFOUND
+>
 >    Payload SHA3-256 ALT digest: NOTFOUND
+>
 >    Payload SHA512 digest: NOTFOUND
+>
 >    Payload SHA512 ALT digest: NOTFOUND
+>
 >    Payload SHA256 digest: NOTFOUND
+>
 >    Payload SHA256 ALT digest: NOTFOUND
+>
 >    Legacy MD5 digest: NOTFOUND
+>
 
 ## Confirm your system has the proper algorithms
 
@@ -192,11 +203,31 @@ rpm -Kv desktopvideo-15.3.1a4.x86_64.rpm
 
 
 ## To Fix:
+
+### rpmrebuild
+
+```bash
+rpmrebuild -enp desktopvideo-*.x86_64.rpm
+```
+>
+> Write the changes to the temporary spec file, then continue.
+>
+> A compatible rpm to use in Discover should be stored in `~/rpmbuild/RPMS/` 
+>
+
+Alternatively, use `dnf`
+
+```bash
+sudo dnf install ~/.rpmbuilds/RPMS/*/desktopvideo-*.x86_64
+```
+
+### The hard and unproven way
+
 ```bash
 sudo dnf install rpm-build rpmdevtools
 rpmdev-setuptree
-cp desktopvideo-15.3.1a4-x86_64.tar.gz ~/rpmbuild/SOURCES/
-cp desktopvideo-15.3.1a4.x86_64.spec ~/rpmbuild/SPECS/
+cp desktopvideo-*-x86_64.tar.gz ~/rpmbuild/SOURCES/
+cp desktopvideo-*.x86_64.spec ~/rpmbuild/SPECS/
 ```
 ```bash
 rpmbuild -ba ~/rpmbuild/SPECS/desktopvideo-15.3.1a4.x86_64.spec
