@@ -54,7 +54,7 @@ make -j$(nproc)
 ```
 
 ## Optional
-
+Add examples
 ```bash
 cmake .. -DSDL_EXAMPLES=On
 ```
@@ -66,7 +66,7 @@ cmake .. -DSDL_SHARED=ON -DSDL_STATIC=ON
 # Install
 
 ```bash
-# make install
+make install
 ```
 
 # Build Something With SDL3

@@ -1,5 +1,5 @@
 <h1><p align="center">Banana / Apple Cake</p></h1>
-
+Tags: [[library/Recipes/]]
 ## Ingredients
 
 - 2 Bananas

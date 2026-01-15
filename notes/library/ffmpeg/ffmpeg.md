@@ -23,7 +23,7 @@ ffmpeg -i input.mp4 -c:v {{ DESIRED_CODEC }} -c:a {{ DESIRED_CODEC }} output.mkv
 ## Timestamps
 
 ```bash
-ffmpeg -ss 30 -t 3 -i input -c copy output
+ffmpeg -ss {start_time} -t {duration} -i input -c copy output
 ```
 
 # CPU-Work
@@ -39,8 +39,11 @@ ffmpeg -i {{input}} -map 0 -c:v libvpx-vp9 -c:a copy -c:s copy -b:v 1M -quality 
 ```
 ## Extract frames to files
 ```bash
-ffmpeg -i *.mp4 -r 24 output-image-%3d.png
-ffmpeg i- input.mp4 -vf fps=# newfolder/out%d.png
+ffmpeg -i {input} -r {frame_rate} output-image-%3d.png
+```
+
+```bash
+ffmpeg -i {input} -vf fps={frame_rate} newfolder/out%d.png
 ```
 
 ## 
@@ -59,7 +62,7 @@ ffmpeg -i input -vf "fps=10,scale=-1:720:flags=lanczos,split[s0][s1];[s0]palette
 ## Merge image frames to a video
 
 ```bash
-ffmpeg -framerate # -i newfolder/out%d.png -c:v libx264 -r {{ output }}
+ffmpeg -framerate {frame_rate} -i newfolder/out%d.png -c:v libx264 -r {{ output }}
 ```
 
 ## Merge two audio tracks together
@@ -71,7 +74,7 @@ ffmpeg -i input -i input2 -filter_complex amerge=inputs=2 -ac 2 output
 ## NVIDIA
 
 ```bash
-ffmpeg -hwaccel cuda -hwaccel_output_format cuda -i {{input}} -filter:v "scale_cuda=-1:#,fps=#" -c:a copy -c:v h264_nvenc -b:v 5M {{output}}
+ffmpeg -hwaccel cuda -hwaccel_output_format cuda -i {{input}} -filter:v "scale_cuda=-1:{height},fps={frame_rate}" -c:a copy -c:v h264_nvenc -b:v 5M {{output}}
 ```
 
 > Note: NVIDIA's hardware acceleration, while powerful, is only capable of encoding and decoding specific h264/5 codecs. It is only recommended to use this format outside of network files.
@@ -82,6 +85,7 @@ ffmpeg -hwaccel cuda -hwaccel_output_format cuda -i {{input}} -filter:v "scale_c
 ```bash
 cat mylist.txt
 ```
+
 > file '/path/to/file1'
 >
 > file '/path/to/file2'
@@ -90,7 +94,7 @@ cat mylist.txt
 
 ```bash
 
-ffmpeg -safe 0 -f concat -i combine.txt -c copy output_complete.mkv
+ffmpeg -safe 0 -f concat -i mylist.txt -c copy output_complete.mkv
 ```
 
 ## Merge video only with separate audio track

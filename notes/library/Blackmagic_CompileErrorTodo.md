@@ -157,38 +157,31 @@ sudo dkms install -m blackmagic-io -v 14.4.1a4 -k (uname -r)
 ```
 
 # Problems installing provided rpm?
+
 >
 > Internal Error: running transaction: package does not verify: no digest
->
-The provided package was built with outdated cryptographic digest, and modern Discover wants the rpm packaged with stricter security rules.
+
+
+The provided package was built with outdated cryptographic digest, and modern Discover application in Fedora wants the rpm packaged with stricter security rules.
 
 ## Confirm the issue
 ```bash
-rpm -Kv desktopvideo-15.3.1a4.x86_64.rpm 
+rpm -Kv desktopvideo-*.x86_64.rpm 
 ```
->
-> desktopvideo-15.3.1a4.x86_64.rpm:
+
+
+> desktopvideo-{version}.x86_64.rpm:
 >
 >    Header SHA3-256 digest: NOTFOUND
->
 >    Header SHA256 digest: NOTFOUND
->
 >    Header SHA1 digest: NOTFOUND
->
 >    Payload SHA3-256 digest: NOTFOUND
->
 >    Payload SHA3-256 ALT digest: NOTFOUND
->
 >    Payload SHA512 digest: NOTFOUND
->
 >    Payload SHA512 ALT digest: NOTFOUND
->
 >    Payload SHA256 digest: NOTFOUND
->
 >    Payload SHA256 ALT digest: NOTFOUND
->
 >    Legacy MD5 digest: NOTFOUND
->
 
 ## Confirm your system has the proper algorithms
 
@@ -209,14 +202,9 @@ rpm -Kv desktopvideo-15.3.1a4.x86_64.rpm
 ```bash
 rpmrebuild -enp desktopvideo-*.x86_64.rpm
 ```
->
-> Write the changes to the temporary spec file, then continue.
->
-> A compatible rpm to use in Discover should be stored in `~/rpmbuild/RPMS/` 
->
-
-Alternatively, use `dnf`
-
+- Write the changes to the temporary spec file, then continue.
+- A compatible rpm to use in Discover should be stored in `~/rpmbuild/RPMS/` 
+  - Alternatively, use `dnf`
 ```bash
 sudo dnf install ~/.rpmbuilds/RPMS/*/desktopvideo-*.x86_64
 ```
