@@ -1,43 +1,43 @@
 #!/bin/bash
 set -e
 if [ ! -f /etc/os-release ] ; then
-        echo "I don't know what distribution this is."
-        exit 1
+	echo "I don't know what distribution this is."
+	exit 1
 fi
 . /etc/os-release
 DISTRO=$ID
 case "$DISTRO" in
-        ubuntu)
-                sudo apt update
-                sudo apt install -y build-essential pkg-config libc6-dev libssl-dev libgl1-mesa-dev libqt5-dev libavcodec-dev libavutil-dev libavformat-dev libexpat1-dev wget tar
-                ;;
-        debian)
-                sudo apt update
-                sudo apt install -y build-essential pkg-config libc6-dev libssl-dev libgl1-mesa-dev qtbase5-dev qtbase5-private-dev libavcodec-dev libavutil-dev libavformat-dev libexpat1-dev wget tar
-                ;;
-        fedora)
-                sudo dnf install -y gcc gcc-c++ make pkgconf-pkg-config openssl-devel mesa-libGL-devel qt5-qtbase-devel qt5-qtbase-private-devel expat-devel wget tar
-                if rpm -q ffmpeg-free >/dev/null 2>&1; then sudo dnf install -y ffmpeg-free-devel; elif rpm -q ffmpeg >/dev/null 2>&1; then sudo dnf install -y ffmpeg-devel; else echo "No ffmpeg installation found"; fi
-                ;;
-        *)
-                echo "Wait, what distribution is this? $DISTRO"
-                exit 1
-                ;;
+	ubuntu)
+		sudo apt update
+		sudo apt install -y build-essential pkg-config libc6-dev libssl-dev libgl1-mesa-dev libqt5-dev libavcodec-dev libavutil-dev libavformat-dev libexpat1-dev wget tar
+		;;
+	debian)
+		sudo apt update
+		sudo apt install -y build-essential pkg-config libc6-dev libssl-dev libgl1-mesa-dev qtbase5-dev qtbase5-private-dev libavcodec-dev libavutil-dev libavformat-dev libexpat1-dev wget tar
+		;;
+	fedora)
+		sudo dnf install -y gcc gcc-c++ make pkgconf-pkg-config openssl-devel mesa-libGL-devel qt5-qtbase-devel qt5-qtbase-private-devel expat-devel wget tar
+		if rpm -q ffmpeg-free >/dev/null 2>&1; then sudo dnf install -y ffmpeg-free-devel; elif rpm -q ffmpeg >/dev/null 2>&1; then sudo dnf install -y ffmpeg-devel; else echo "No ffmpeg installation found"; fi
+		;;
+	*)
+		echo "Wait, what distribution is this? $DISTRO"
+		exit 1
+		;;
 esac
 echo "Set up for $DISTRO"
-mkdir -p makemkv && pushd makemkv
+mkdir -p /tmp/makemkv && pushd /tmp/makemkv
 url_topic="http://www.makemkv.com/forum/viewtopic.php?f=3&t=224"
 url_download="https://www.makemkv.com/download"
 files=( $(wget -qO- "$url_topic" | grep -oP "$url_download/makemkv-(?:bin|oss)-[0-9]+(?:\.[0-9]+){2}\.tar\.gz") )
 declare -p files
 for url in "${files[@]}"; do
-        wget $url 
+	wget $url 
 done
 files=( $(ls *.tar.gz) )
 for file in "${files[@]}"; do
-        tarfile="${file%.gz}"
-        gunzip "$file"
-        tar -xf "$tarfile"
+	tarfile="${file%.gz}"
+	gunzip "$file"
+	tar -xf "$tarfile"
 done
 pushd makemkv-oss-*/
 ./configure
