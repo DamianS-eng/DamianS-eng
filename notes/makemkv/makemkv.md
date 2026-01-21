@@ -27,6 +27,17 @@ This is a quick way to get the makemkv tool and command-line program set up on y
 ```powershell
 .\makemkvcon64.exe f --all-yes -d E: rawflash -i path\to\HL-DT-ST-BD-RE_WH16NS60-1.02-NM00100-211810291936.bin
 ```
+
+# MakeMKV Trial Expired
+
+If you get an error message while loading MakeMKV but there is no newer version to install, the beta key is likely expired.
+
+[Check this forum post](https://forum.makemkv.com/forum/viewtopic.php?f=5&t=1053) for the latest beta key, then attempt to activate it in the GUI, or use
+
+```bash
+makemkvcon reg <your-beta-key-here>
+```
+
 # References
 
 - [MakeMKV website](https://www.makemkv.com/download)
