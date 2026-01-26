@@ -238,3 +238,17 @@ Otherwise, insert this above `%install`
 Currently, this results in more build errors...
 
 The output of compatibile builds will be provided in `~/rpmbuild/`
+
+# Blackmagic dkms is installed, but on kernel update, blackmagic-io fails to load.
+
+This is likely caused by improper package managing, or some incomplete steps when remaking the rpm for the latest dnf changes.
+
+```bash
+sudo dkms add -m blackmagic-io -v <latest-version>
+# the add may fail if it's already added
+sudo dkms build -m blackmagic-io -v <latest-version>
+sudo dkms install -m blackmagic-io -v <latest-version>
+sudo dkms autoinstall
+```
+
+> Noteably, add a script to `/etc/kernel/postinst.d/` called `blackmagic-dkms`, with the `dkms autoinstall` command, and make it executable.
