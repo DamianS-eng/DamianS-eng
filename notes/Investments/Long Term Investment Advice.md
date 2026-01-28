@@ -10,6 +10,20 @@ __Hold onto investments for 20 years.__
 >
 > As long as the next big economic drop has not superceded the 2008 financial crisis, everything will be fine following the above invbestment guideline.
 
+# The Historical Data
+
+## US Stocks and Cash beat inflation in the long run.
+
+![Chart 1](./Chart1-us-stocks-and-cash-beating-inflation.avif)
+
+## The past stock market falls, from 1920s to COVID
+
+![Chart 2](./Chart2-biggest-stock-market-falls.avif)
+
+## The risks of short term investments
+
+![Chart 3](./Chart3-short-term-investor-risk.jpg)
+
 # References
 
 - [Schrodes Article - An optimistic case for long term investment](https://www.schroders.com/en-us/us/wealth-management/insights/the-data-that-shows-a-case-for-long-term-investing/)
