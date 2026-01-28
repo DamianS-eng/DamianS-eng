@@ -24,6 +24,26 @@ __Hold onto investments for 20 years.__
 
 ![Chart 3](./Chart3-short-term-investor-risk.jpg)
 
+# When would a recession,,, happen?
+
+There's no determining factor or way to prove when a crash will happen, but a combination of any of these factors will lead to one eventually:
+
+- Uncertain economic conditions
+- Availiability of capital/credit
+- Government policy changes __excluding tarrifs__
+  - Tariffs affect the middle market more than innovation
+- Revenue growth
+- Generative AI
+- Global unrest
+- US competition
+- Lacking consumer confidence
+- Rising interest rates
+- Supply chain issues
+- Fraud
+- No current challenges
+- Foreign exchange volatility
+
+
 # References
 
 - [Schrodes Article - An optimistic case for long term investment](https://www.schroders.com/en-us/us/wealth-management/insights/the-data-that-shows-a-case-for-long-term-investing/)
