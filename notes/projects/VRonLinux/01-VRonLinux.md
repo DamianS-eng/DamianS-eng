@@ -30,7 +30,6 @@ One idea for programs requiring V C++ redistributables:
 
 1. First install winetricks: `sudo apt install winetricks`.
   - To have the latest one run: `wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks`
-1. Then run `winetricks vcrun2015` .
 1. Then run: `./winetricks vcrun2015`
 1. Then try installing and running your application.
 
