@@ -33,7 +33,7 @@ One idea for programs requiring V C++ redistributables:
 1. Then run: `./winetricks vcrun2015`
 1. Then try installing and running your application.
 
-Also, check for an entry in Wine AppDB or in [Code Weavers](http://www.codeweavers.com).
+Also, check for an entry in [Wine AppDB](https://appdb.winehq.org/) for reference, or use a solution like [Code Weavers](http://www.codeweavers.com).
 
 Regards,
 [Source](https://askubuntu.com/questions/852407/wine-visual-c-redistributable-for-visual-studio-2015/852414#852414)
