@@ -2,6 +2,8 @@ Free the Kindle!
 
 # Why?
 
+Amazon has the irrevocable right to suspend or rescind all titles, books and audio, from their platform. This also means that, if the content is not on Kindle, it cannot be redownloaded.
+
 # Procedure
 
 ## Identify
@@ -106,4 +108,4 @@ Which will show a window in which you will be able to see your Kindle’s serial
 
 # References
 
-[Kindle Modding](https://kindlemodding.org)
+[Kindle Moddding](https://kindlemodding.org)

@@ -4,7 +4,7 @@ Place the iso distributed from [Netboot Webiste](https://netboot.xyz/) onto a fl
 
 At the menu, under __Distributions__, go to **Live Network Installls (64-bit)**, then **Debian**, and under __Latest Releases_, **Debian 13.0 (trixie)**. Graphical-based install.
 
-> Netboot works well if the PC is connected to the Internet and has a generous amount of RAM.
+> Netboot works well if the PC is connected to the Internet via Ethernet cable and has a generous amount of RAM.
 
 Once the Debian 13 installer has launched, the flash drive can be removed from the PC for the rest of the initial installation.
 
