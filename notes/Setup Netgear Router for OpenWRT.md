@@ -23,6 +23,8 @@ The router Power will light solid when successful. Reconnect to the router using
 - Default is `password`
 Then obtain the sysupgrade `.bin` file, and go to the bottom of the page `cgi-bin/luci/admin/system/flash` and upload that file to get the router updated to the latest compatible OpenWRT firmware.
 
+As of this time, the supported OpenWRT version 24 firmware allows two of the radios, the 2.4GHz and 5GHz frequencies, to operate wirelessly from the router simultaneously. Attempting to activate the third 6GHz radio causes problems. In addition, the fan on top of the unit never spins.
+
 # Place Netgear as Wireless Access Point Behind Main Internet Router
 
 # References
