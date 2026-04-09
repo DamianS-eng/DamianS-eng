@@ -49,31 +49,38 @@ pip install weii
 # Wii Balance Board Weight Logger
 # -----------------------------
 
+kg_to_lb = 2.20462262185
+
 # Name of your conda environment
 CONDA_ENV="balanceboard"
 
 # Directory where logs will be stored
-LOG_DIR="$HOME/balanceboard_logs"
+LOG_DIR="/tmp/balanceboard_logs"
 
 mkdir -p "$LOG_DIR"
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
-LOG_FILE="$LOG_DIR/weight_$TIMESTAMP.txt"
+CSV_FILE="$LOG_DIR/weights.csv"
 
 source "$HOME/miniconda3/etc/profile.d/conda.sh"
 conda activate "$CONDA_ENV"
+
+if [ ! -f "$CSV_FILE" ]; then
+    echo "timestamp,weight_kg" > "$CSV_FILE"
+fi
 
 echo "Logging weight to: $LOG_FILE"
 echo "Press the FRONT POWER BUTTON on the Balance Board now."
 
 WEIGHT_OUTPUT=$(weii 2>&1)
 
-{
-    echo "Timestamp: $(date)"
-    echo "$WEIGHT_OUTPUT"
-} > "$LOG_FILE"
+WEIGHT_KG=$(echo "$WEIGHT_OUTPUT" | grep -oP '(?<=Weight: )[\d\.]+')
+WEIGHT_LB=$(echo "$WEIGHT_KG * $kg_to_lb" | bc -l)
+WEIGHT_LB=$(printf "%.1f" "$WEIGHT_LB")
 
-echo "Done. Logged:"
-echo "$WEIGHT_OUTPUT"
+echo "$TIMESTAMP,$WEIGHT_LB" >> "$CSV_FILE"
+
+echo "Logged: $TIMESTAMP → $WEIGHT_LB lbs"
+echo "CSV file: $CSV_FILE"
 ```
 
 # References
