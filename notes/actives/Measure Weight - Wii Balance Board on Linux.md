@@ -43,13 +43,13 @@ pip install weii
 # Automation
 
 ```bash
-#!/usr/bin bash
+#!/usr/bin/bash
 
 # -----------------------------
 # Wii Balance Board Weight Logger
 # -----------------------------
 
-kg_to_lb = 2.20462262185
+kg_to_lb=2.20462262185
 
 # Name of your conda environment
 CONDA_ENV="balanceboard"
@@ -59,28 +59,40 @@ LOG_DIR="/tmp/balanceboard_logs"
 
 mkdir -p "$LOG_DIR"
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
+LOG_FILE="$LOG_DIR/weights_log"
 CSV_FILE="$LOG_DIR/weights.csv"
 
 source "$HOME/miniconda3/etc/profile.d/conda.sh"
 conda activate "$CONDA_ENV"
 
 if [ ! -f "$CSV_FILE" ]; then
-    echo "timestamp,weight_kg" > "$CSV_FILE"
+    echo "timestamp,weight_lbs" > "$CSV_FILE"
 fi
 
-echo "Logging weight to: $LOG_FILE"
-echo "Press the FRONT POWER BUTTON on the Balance Board now."
+echo "Logging weight to: $CSV_FILE"
+#echo "Press the FRONT POWER BUTTON on the Balance Board now."
 
-WEIGHT_OUTPUT=$(weii 2>&1)
+PYTHONUNBUFFERED=1 weii | tee "$LOG_FILE"
 
-WEIGHT_KG=$(echo "$WEIGHT_OUTPUT" | grep -oP '(?<=Weight: )[\d\.]+')
-WEIGHT_LB=$(echo "$WEIGHT_KG * $kg_to_lb" | bc -l)
+output=$(tail -n 1 "$LOG_FILE")
+rm $LOG_FILE
+
+WEIGHT_KG=$(echo "$output" | grep -oP '(?<=weight: )[\d\.]+')
+WEIGHT_KG="${WEIGHT_KG%%.}"
+WEIGHT_LB=$(echo "$WEIGHT_KG * $kg_to_lb" | bc)
 WEIGHT_LB=$(printf "%.1f" "$WEIGHT_LB")
 
-echo "$TIMESTAMP,$WEIGHT_LB" >> "$CSV_FILE"
+paplay ~/Music/complete.oga
+
+echo "$TIMESTAMP,$WEIGHT_LB lbs" >> "$CSV_FILE"
 
 echo "Logged: $TIMESTAMP → $WEIGHT_LB lbs"
 echo "CSV file: $CSV_FILE"
+gpg -c $CSV_FILE
+rm $CSV_FILE
+mv $CSV_FILE.gpg $CSV_FILE
+echo "Encrypted. Use gpg --decrypt $CSV_FILE > file to decrypt."
+
 ```
 
 # References
