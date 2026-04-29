@@ -49,10 +49,12 @@ sudo dnf install kdenlive
 ## Generate the transcript
 
 1. Open Project
-2. Tools => Speech to Text
-3. Vosk
-4. Select language model
-5. Run transcription
+2. Editing screen
+3. Speech Editor
+  - A voice model needs to be configured. Install the necessary plugin, then download and have the program locate a model.
+4. Select Vosk and the language model
+5. Edit Subtitle Tool -> Speech Recognition
+6. Run transcription
 
 ## Convert to animated text clips
 
