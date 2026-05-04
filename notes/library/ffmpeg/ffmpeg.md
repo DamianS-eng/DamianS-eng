@@ -37,6 +37,16 @@ ffmpeg -ss {start_time} -t {duration} -i input -c copy output
 ```bash
 ffmpeg -i {{input}} -map 0 -c:v libvpx-vp9 -c:a copy -c:s copy -b:v 1M -quality best -speed 1 -crf 26 output\ -\ vp9.mkv
 ```
+
+## Two-Pass
+
+[Reference](https://trac.ffmpeg.org/wiki/Encode/VP9#twopass)
+
+```
+ffmpeg -i {{input}} -c:v libvpx-vp9 -b:v 2M -pass 1 -an -f null /dev/null && \
+ffmpeg -i input.mp4 -c:v libvpx-vp9 -b:v 2M -pass 2 -c:a libopus output.webm
+```
+
 ## Extract frames to files
 ```bash
 ffmpeg -i {input} -r {frame_rate} output-image-%3d.png
