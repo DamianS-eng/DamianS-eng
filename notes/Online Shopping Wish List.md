@@ -54,7 +54,7 @@
 - [22 AWG Wire](https://www.amazon.com/dp/B00NB3U2BU/?coliid=I2B637M0VG3E9V&colid=2IJ4JAVPP3VY7&psc=1&ref_=list_c_wl_lv_ov_lig_dp_it)
 - [5V 2.5A Power Supply](https://www.amazon.com/dp/B00MARDJZ4/?coliid=I2PV12XW0ZQHP&colid=2IJ4JAVPP3VY7&psc=1&ref_=list_c_wl_lv_ov_lig_dp_it)
 - [5 inch HDMI Display](https://www.amazon.com/dp/B013JECYF2/?coliid=I1AQS07QPH9HTS&colid=2IJ4JAVPP3VY7&psc=1&ref_=list_c_wl_lv_ov_lig_dp_it)
-- 
+- [Zero Gravity Gaming Chair Cockpit](https://shop.app/products/10247895449917/zero-gravity-gaming-chair-cockpit-workstation)
 
 # Books
 - [It Began With a Dream: Dr. Gladys B. West](https://www.amazon.com/gp/product/0578676389/ref=ox_sc_saved_title_3?smid=A3A3EYBOM51W2&psc=1)
