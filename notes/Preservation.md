@@ -30,7 +30,7 @@ Steam doesn't apply a hard DRM for games on their platforms, but they permit pub
 
 #### Bypass
 
-1. Get the Goldberg Emulator
+1. Get the [Goldberg Emulator](https://mr_goldberg.gitlab.io/glob)
 2. Replace the Steam API file
 3. Add an app_id.txt file
 

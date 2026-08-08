@@ -81,3 +81,4 @@ php -s localhost:8000
 
 [Tool on Meta Data](https://w3speedup.com/tools/extract-metadata-from-websites/)
 [Lens: Check meta tags, icons and rss feeds](https://lens.rknight.me)
+- [Eli the Computer Guy's old HTML Guide](https://youtube.com/watch?v=fS7w-TXinPE)
