@@ -100,6 +100,7 @@ Enable Compatibility for all titles.
 1. _Enable Steam Play for all other titles_
 1. _Run other titles with_ the latest version of Proton
 
+Use resources such as [Proton FAQ](https://github.com/ValveSoftware/Proton/wiki/Proton-FAQ#how-does-proton-manage-wine-prefixes) to adjust overall Proton settings or game-by-game basis. 
 ### Proton Database
 
 For specific titles, refer to [ProtonDB](https://www.protondb.com) for the recommended Proton version and any necessary tweaks.

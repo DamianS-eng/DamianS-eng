@@ -67,5 +67,5 @@ Create a autorun recovery Clonezilla live CD or USB flash drive
 
 # References
 
-[Original Clonezilla Doc Site](https://clonezilla.org/clonezilla-live-doc.php)
-[Kernel Boot Parameters](https://clonezilla.org/fine-print-live-doc.php?path=./clonezilla-live/doc/99_Misc/00_live-boot-parameters.doc#00_live-boot-parameters.doc)
+- [Original Clonezilla Doc Site](https://clonezilla.org/clonezilla-live-doc.php)
+- [Kernel Boot Parameters](https://clonezilla.org/fine-print-live-doc.php?path=./clonezilla-live/doc/99_Misc/00_live-boot-parameters.doc#00_live-boot-parameters.doc)
