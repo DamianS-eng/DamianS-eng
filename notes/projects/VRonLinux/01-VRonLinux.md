@@ -113,7 +113,7 @@ For specific titles, refer to [ProtonDB](https://www.protondb.com) for the recom
 
 #### Titles not on Steamdb or Protondb
 
-- Catch & Release
+- ~~Catch & Release~~ (recently tested and working on Proton 10) 
 - Glyph (delisted)
 - Sparc (offline)
 - Smashbox Arena (offline)

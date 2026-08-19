@@ -35,9 +35,9 @@ cat /etc/os-release | grep PRETTY_NAME=
 ### Install Free & Nonfree repositories
 
 1. Enable access to free repository. [^4]
- - Click on the link at the rpmfusion website to download the RPm Fusion free that matches this machine's Fedora version.
+ - Click on the link at the rpmfusion website to download the RPM Fusion free that matches this machine's Fedora version.
  - Install using `kpackagekit` or `Discover`.
-1. Enable access to nonfree repository.
+2. Enable access to nonfree repository.
  - Click on the link of the RPM Fusion nonfree repository that matches this machine's Fedrora version.
  - Similarly, use `kpackagekit` or `Discover`
 
@@ -121,7 +121,7 @@ Once Steam VR is installed and headset is connected, launch it and go through Ro
 
 Enable Proton Compatibility Layer
 
-Settings -> Compatibility -> Enable Steam Play for supported titles & all other titles
+`Settings` -> `Compatibility` -> `Enable Steam Play for supported titles & all other titles`
 
 Specific games may need a specific Proton version, or additional launch parameters.
 
@@ -138,10 +138,10 @@ sudo dnf4 group install multimedia sound-and-video openh264 gstreamer1-plugin-op
 Steam won't know about VR compatibility, so use [ProtonDB](https://www.protondb.com)
 
 1. [Access Steam settings.](https://steamcommunity.com/sharedfiles/filedetails/?id=390278662)
-1. Steam Help menu
-1. System Information
-1. Right-click and select Copy all text to clipboard
-1. Omit everything starting with 'LD Scout Report' or if provided it will be stripped out automatically upon saving to ProtonDB.
+2. Steam `Help` menu
+3. `System Information`
+4. Right-click and select `Copy all text to clipboard`
+5. Omit everything starting with 'LD Scout Report' or if provided it will be stripped out automatically upon saving to ProtonDB.
 
 # Troubleshooting
 

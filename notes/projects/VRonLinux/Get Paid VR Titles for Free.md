@@ -1,3 +1,4 @@
+Tags: [[virtual]] [[VR]]
 # Disclaimer
 
 Take this guide with a grain of salt. It was found on the `/r/occulusquestapks` subreddit years ago, only seemed relevant to Quest headsets, and an older less-locked down firmware.

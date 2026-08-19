@@ -32,3 +32,7 @@ Now the save will be stored on "gm9/out" on the SD card!
 9. Select "Inject GBA VC save."
 
 Now, the save file is replaced!
+
+# References
+
+- [Blue Moon Falls Save Converter for Pokemon Gold Silver & Crystal](https://bluemoonfalls.com/pages/tools/gsc-save-converter)
