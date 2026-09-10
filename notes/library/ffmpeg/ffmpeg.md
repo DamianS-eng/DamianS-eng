@@ -120,3 +120,15 @@ ffmpeg -i video.mp4 -i subtitle.srt c:v copy c:a copy -scodec mov_text output.mp
 # Recommended Advice
 
 ## Trade-off Between Speed and Efficiency
+
+# Other Target Platforms
+
+## 3DS
+
+```bash
+ffmpeg -i input.mkv -vf "scale=400:240:force_original_aspect_ratio=decrease,pad=400:240:(ow-iw)/2:(oh-ih)/2" \
+-r 24 \
+-c:v mpeg4 -q:v 6 \
+-c:a libvorbis -q:a 5 \
+-movflags +faststart output.3ds.mkv 
+```
