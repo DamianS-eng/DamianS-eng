@@ -1,4 +1,5 @@
 # Object Placement is important in Splatoon.
+
 Tags: [[Splatoon]]
 Do not stare too long at raw numbers and tier lists made by influencers. 
 
