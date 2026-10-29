@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @DamianS-eng
 - 👀 I’m interested in ... controllers! Nintendo Joy-Cons, trackpads, analog sticks
 - 🌱 I’m currently learning ... coding: c++, Python; hardware designs, circuits...
-- 📫 How to reach me ...
+- 📫 How to reach me ... [Github.io](https://damians-eng.github.io)
 <picture>
   <source
     srcset="https://github-readme-stats-damians-engs-projects.vercel.app/api?username=DamianS-eng&show_icons=true&theme=dark&rank_icon=github"
@@ -21,4 +21,3 @@ DamianS-eng/DamianS-eng is a ✨ special ✨ repository because its `README.md` 
 I'll have a folder of my ongoing circuit designs.
 - 💞️ 
 --->
-https://damians-eng.github.io
