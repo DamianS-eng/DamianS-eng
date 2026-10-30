@@ -69,6 +69,12 @@ ffmpeg -i input -filter_complex "[0:v] fps=12,scale=480:-1,split [a][b];[a] pale
 ffmpeg -i input -vf "fps=10,scale=-1:720:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0  output
 ```
 
+### Convert gif to animated png (apng)
+
+```bash
+ffmpeg -i input.gif -plays 0 -fps_mode passthrough -c:v apng -compression_level 9 -pred mixed -f apng output.png
+```
+
 ## Merge image frames to a video
 
 ```bash
