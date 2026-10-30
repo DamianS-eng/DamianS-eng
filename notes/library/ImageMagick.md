@@ -78,6 +78,12 @@ for f in cropped_output*.png; do
 done
 ```
 
+## Annotate an animated gif with the same text at same position
+
+```bash
+magick input.gif -coalesce -gravity South -font Noto-Sans -pointsize 20 -fill black -annotate +0+20 "MY TEXT" -fill white -annotate +0+18 "MY TEXT" -layers Optimize output.gif
+```
+
 ## Convert all images in location into an animation (gif or webp)
 ```bash
 magick -delay 8 \
