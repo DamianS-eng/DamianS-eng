@@ -1,3 +1,5 @@
+
+Tags: [[livestream]] [[self host]] [[linux]]
 # A way to livestream privately
 
 # Definitions
@@ -251,3 +253,11 @@ WantedBy=multi-user.target
 </body>
 </html>
 ```
+
+
+# Helpful Software to start
+
+## Owncast
+# References
+
+- [Owncast](https://owncast.online/)
